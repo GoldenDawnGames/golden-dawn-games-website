@@ -76,38 +76,95 @@ a {
 
 
 /* =========================================================
-   HEADER LOGO
+   GOLDEN DAWN HEADER LOGO
 ========================================================= */
 
 .nav-logo {
-    display: block;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
 
     width: 150px;
-
-    height: auto;
 
     text-decoration: none;
 
     pointer-events: auto;
 
-    line-height: 0;
-
     flex-shrink: 0;
+
+    line-height: 1;
 }
 
+
+/* =========================================================
+   SUN LOGO
+========================================================= */
 
 .nav-logo-image {
     display: block;
 
-    width: 100%;
+    width: 85px;
 
     height: auto;
 
-    max-height: 95px;
+    max-height: 65px;
 
     object-fit: contain;
 
-    object-position: left top;
+    object-position: center;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   GOLDEN DAWN TEXT
+========================================================= */
+
+.nav-logo-text {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* GOLDEN DAWN */
+
+.nav-logo-golden {
+    color: #d0aa5b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    line-height: 1.2;
+}
+
+
+/* GAMES */
+
+.nav-logo-games {
+    color: #f2efe7;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    line-height: 1.4;
+
+    margin-top: 2px;
 }
 
 
