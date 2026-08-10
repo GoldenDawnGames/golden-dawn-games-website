@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const links = document.querySelectorAll(".side-nav nav a");
+    const navLinks = document.querySelectorAll(".side-nav nav a");
 
-    links.forEach(link => {
+    navLinks.forEach((link) => {
 
         link.addEventListener("click", () => {
 
-            links.forEach(item => {
+            navLinks.forEach((item) => {
                 item.classList.remove("active");
             });
 
