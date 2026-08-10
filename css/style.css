@@ -53,13 +53,13 @@ a {
 ========================================================= */
 
 .side-nav {
-    position: fixed;
+    position: absolute;
 
     top: 0;
     left: 0;
 
     width: 100%;
-    height: 110px;
+    height: 130px;
 
     padding: 22px 55px;
 
@@ -73,7 +73,6 @@ a {
 
     pointer-events: none;
 }
-
 
 /* =========================================================
    GOLDEN DAWN HEADER BRAND
@@ -350,7 +349,7 @@ main {
     align-items: center;
 
     padding:
-        150px
+        170px
         6.5%
         100px;
 
@@ -1174,61 +1173,62 @@ footer {
    SMALL MOBILE
 ========================================================= */
 
-@media (max-width: 500px) {
-
+@media (max-width: 900px) {
 
     /* HEADER */
 
     .side-nav {
+        height: 100px;
+
         padding:
-            16px
-            20px;
+            18px
+            25px;
     }
 
 
     .nav-logo {
-        width: 95px;
+        width: 110px;
     }
 
 
     .nav-logo-image {
-        max-height: 60px;
+        max-height: 70px;
     }
 
 
-    /* SOCIALS */
+    .side-nav nav {
+        display: none;
+    }
+
+
+    /* HIDE DESKTOP SOCIALS */
 
     .nav-social {
-        right: 20px;
-
-        gap: 11px;
-    }
-
-
-    .nav-social a {
-        font-size: 8px;
-
-        letter-spacing: 1.5px;
+        display: none;
     }
 
 
     /* HERO */
 
     .hero {
-        padding-top: 120px;
+        padding:
+            130px
+            8%
+            80px;
+    }
 
-        padding-left: 7%;
 
-        padding-right: 7%;
+    .hero::after {
+        right: 25px;
     }
 
 
     .hero h1 {
         font-size:
             clamp(
-                45px,
-                13vw,
-                70px
+                48px,
+                12vw,
+                80px
             );
 
         letter-spacing: -3px;
@@ -1236,63 +1236,69 @@ footer {
 
 
     .hero-description {
-        font-size: 14px;
-
-        margin-top: 35px;
-    }
-
-
-    .dawnoven {
-        margin-top: 45px;
-
-        font-size: 11px;
-
-        letter-spacing: 5px;
+        font-size: 15px;
     }
 
 
     /* SECTIONS */
 
     .section {
-        padding-left: 7%;
-
-        padding-right: 7%;
+        padding:
+            100px
+            8%;
     }
 
 
-    .section h2 {
-        font-size: 45px;
-    }
+    /* COMPANY */
 
+    .company-grid {
+        grid-template-columns: 1fr;
 
-    .section-intro {
-        font-size: 18px;
+        gap: 30px;
+
+        margin-top: 60px;
     }
 
 
     /* PRODUCTS */
 
-    .game {
-        padding: 28px 0;
-    }
-
-
     .game-link {
         grid-template-columns:
-            45px
+            55px
             1fr;
     }
 
 
-    .game h3 {
-        font-size: 25px;
+    /* PRESS */
+
+    .press-list article {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+
+    /* SUPPORT SOCIALS */
+
+    .socials {
+        flex-direction: column;
+
+        gap: 20px;
     }
 
 
     /* FOOTER */
 
     footer {
-        font-size: 9px;
+        padding:
+            40px
+            8%;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        align-items: flex-start;
     }
 
 }
