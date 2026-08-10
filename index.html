@@ -15,6 +15,11 @@
         content="Golden Dawn Games — an independent game studio creating original worlds across mobile, PC and console."
     >
 
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
     <title>Golden Dawn Games</title>
 
     <link rel="stylesheet" href="./css/style.css">
@@ -32,25 +37,27 @@
     <header class="side-nav">
 
 
-        <!-- LOGO -->
+        <!-- GOLDEN DAWN LOGO -->
 
-        <div class="nav-logo">
+        <a
+            href="#top"
+            class="nav-logo"
+            aria-label="Golden Dawn Games"
+        >
 
-            <span class="logo-star">✦</span>
+            <!--
+                Upload your logo here:
 
-            <div class="logo-text">
+                assets/images/golden-dawn-logo.png
+            -->
 
-                <div>
-                    GOLDEN DAWN
-                </div>
+            <img
+                src="./assets/images/golden-dawn-logo.png"
+                alt="Golden Dawn Games"
+                class="logo-image"
+            >
 
-                <div class="logo-games">
-                    GAMES
-                </div>
-
-            </div>
-
-        </div>
+        </a>
 
 
         <!-- TOP NAVIGATION -->
@@ -84,24 +91,75 @@
 
 
     <!-- =====================================================
-         SOCIAL NAVIGATION
+         SOCIAL NAVIGATION — RIGHT CENTER
     ====================================================== -->
 
     <div class="nav-social">
 
-        <a href="#" target="_blank">
+        <!-- Facebook -->
+
+        <a
+            href="https://www.facebook.com/GoldenDawnGames"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            FACEBOOK
+        </a>
+
+
+        <!-- X -->
+
+        <a
+            href="https://x.com/GoldenDawnGames"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             X
         </a>
 
-        <a href="#" target="_blank">
+
+        <!-- Instagram -->
+
+        <!-- ADD YOUR INSTAGRAM URL HERE -->
+
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             INSTAGRAM
         </a>
 
-        <a href="#" target="_blank">
+
+        <!-- YouTube -->
+
+        <a
+            href="https://www.youtube.com/@GoldenDawnGames14"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             YOUTUBE
         </a>
 
-        <a href="#" target="_blank">
+
+        <!-- Discord -->
+
+        <a
+            href="https://discord.gg/BjjWVMHG2"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            DISCORD
+        </a>
+
+
+        <!-- LinkedIn -->
+
+        <a
+            href="https://www.linkedin.com/in/golden-dawn-games-32a3202b9/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             LINKEDIN
         </a>
 
@@ -119,7 +177,10 @@
              HERO
         ================================================== -->
 
-        <section id="top" class="hero">
+        <section
+            id="top"
+            class="hero"
+        >
 
             <div class="hero-content">
 
@@ -148,81 +209,16 @@
 
 
         <!-- =================================================
-             COMPANY
-        ================================================== -->
-
-        <section id="company" class="section">
-
-            <p class="section-number">
-                01
-            </p>
-
-            <h2>
-                COMPANY
-            </h2>
-
-            <div class="gold-line"></div>
-
-            <p class="section-intro">
-                Golden Dawn Games is an independent studio built
-                around one belief — that games should create worlds
-                worth remembering.
-            </p>
-
-
-            <div class="company-grid">
-
-                <div>
-
-                    <span>
-                        FOUNDED
-                    </span>
-
-                    <strong>
-                        2026
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        FOCUS
-                    </span>
-
-                    <strong>
-                        Original Worlds
-                    </strong>
-
-                </div>
-
-
-                <div>
-
-                    <span>
-                        PLATFORMS
-                    </span>
-
-                    <strong>
-                        Mobile · PC · Console
-                    </strong>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================================
              PRODUCTS
         ================================================== -->
 
-        <section id="products" class="section products-section">
+        <section
+            id="products"
+            class="section products-section"
+        >
 
             <p class="section-number">
-                02
+                01
             </p>
 
             <h2>
@@ -235,107 +231,152 @@
             <div class="game-list">
 
 
+                <!-- UNO RUSH -->
+
                 <article class="game">
 
-                    <span>
-                        01
-                    </span>
+                    <a
+                        href="./games/uno-rush.html"
+                        class="game-link"
+                    >
 
-                    <div>
+                        <span>
+                            01
+                        </span>
 
-                        <h3>
-                            UNO RUSH
-                        </h3>
+                        <div>
 
-                        <p>
-                            LIVE
-                        </p>
+                            <h3>
+                                UNO RUSH!
+                            </h3>
 
-                    </div>
+                            <p>
+                                LIVE
+                            </p>
+
+                        </div>
+
+                    </a>
 
                 </article>
 
 
+                <!-- BLOCK RUSH -->
+
                 <article class="game">
 
-                    <span>
-                        02
-                    </span>
+                    <a
+                        href="./games/block-rush.html"
+                        class="game-link"
+                    >
 
-                    <div>
+                        <span>
+                            02
+                        </span>
 
-                        <h3>
-                            BLOCK RUSH
-                        </h3>
+                        <div>
 
-                        <p>
-                            COMING SOON
-                        </p>
+                            <h3>
+                                BLOCK RUSH
+                            </h3>
 
-                    </div>
+                            <p>
+                                COMING SOON
+                            </p>
+
+                        </div>
+
+                    </a>
 
                 </article>
 
 
+                <!-- WORD RUSH -->
+
                 <article class="game">
 
-                    <span>
-                        03
-                    </span>
+                    <a
+                        href="./games/word-rush.html"
+                        class="game-link"
+                    >
 
-                    <div>
+                        <span>
+                            03
+                        </span>
 
-                        <h3>
-                            WORD RUSH
-                        </h3>
+                        <div>
 
-                        <p>
-                            PRE-PRODUCTION
-                        </p>
+                            <h3>
+                                WORD RUSH
+                            </h3>
 
-                    </div>
+                            <p>
+                                PRE-PRODUCTION
+                            </p>
+
+                        </div>
+
+                    </a>
 
                 </article>
 
 
+                <!-- LAST ASH DEFENDER -->
+
                 <article class="game">
 
-                    <span>
-                        04
-                    </span>
+                    <a
+                        href="./games/last-ash-defender.html"
+                        class="game-link"
+                    >
 
-                    <div>
+                        <span>
+                            04
+                        </span>
 
-                        <h3>
-                            LAST ASH DEFENDER
-                        </h3>
+                        <div>
 
-                        <p>
-                            PRE-PRODUCTION
-                        </p>
+                            <h3>
+                                LAST ASH DEFENDER
+                            </h3>
 
-                    </div>
+                            <p>
+                                PRE-PRODUCTION
+                            </p>
+
+                        </div>
+
+                    </a>
 
                 </article>
 
+
+                <!-- CLAIRÈS DREAM -->
 
                 <article class="game featured">
 
-                    <span>
-                        05
-                    </span>
+                    <a
+                        href="./games/claires-dream.html"
+                        class="game-link"
+                    >
 
-                    <div>
+                        <span>
+                            05
+                        </span>
 
-                        <h3>
-                            CLAIRÈS DREAM
-                        </h3>
+                        <div>
 
-                        <p>
-                            PRE-PRODUCTION
-                        </p>
+                            <h3>
+                                CLAIRÈS DREAM
+                            </h3>
 
-                    </div>
+                            <p>
+                                PRE-PRODUCTION
+                            </p>
+
+                        </div>
+
+                    </a>
 
                 </article>
 
@@ -349,10 +390,13 @@
              PRESS
         ================================================== -->
 
-        <section id="press" class="section">
+        <section
+            id="press"
+            class="section"
+        >
 
             <p class="section-number">
-                03
+                02
             </p>
 
             <h2>
@@ -379,7 +423,8 @@
 
                         <p>
                             Official Golden Dawn Games website
-                            begins development.
+                            launches as the studio continues
+                            building original worlds and games.
                         </p>
 
                     </div>
@@ -396,11 +441,12 @@
                     <div>
 
                         <h3>
-                            Block Rush
+                            UNO Rush!
                         </h3>
 
                         <p>
-                            Upcoming mobile puzzle experience.
+                            Golden Dawn Games' mobile puzzle
+                            experience is now live.
                         </p>
 
                     </div>
@@ -439,10 +485,13 @@
              RECRUIT
         ================================================== -->
 
-        <section id="recruit" class="section recruit-section">
+        <section
+            id="recruit"
+            class="section recruit-section"
+        >
 
             <p class="section-number">
-                04
+                03
             </p>
 
             <h2>
@@ -466,10 +515,13 @@
              SUPPORT
         ================================================== -->
 
-        <section id="support" class="section support-section">
+        <section
+            id="support"
+            class="section support-section"
+        >
 
             <p class="section-number">
-                05
+                04
             </p>
 
             <h2>
@@ -479,38 +531,147 @@
             <div class="gold-line"></div>
 
 
-            <div class="support-links">
-
-                <a href="#">
-                    TERMS OF SERVICE
-                    <span>↗</span>
-                </a>
-
-                <a href="#">
-                    PRIVACY POLICY
-                    <span>↗</span>
-                </a>
-
-            </div>
+            <div class="support-content">
 
 
-            <div class="socials">
+                <!-- CONTACT -->
 
-                <a href="#">
-                    X
-                </a>
+                <div class="contact-block">
 
-                <a href="#">
-                    INSTAGRAM
-                </a>
+                    <h3>
+                        CONTACT US
+                    </h3>
 
-                <a href="#">
-                    YOUTUBE
-                </a>
 
-                <a href="#">
-                    LINKEDIN
-                </a>
+                    <p>
+                        Email:
+                        <a href="mailto:huntdown.inc@gmail.com">
+                            huntdown.inc@gmail.com
+                        </a>
+                    </p>
+
+
+                    <p>
+                        Phone:
+                        <a href="tel:+917010822669">
+                            +91 7010822669
+                        </a>
+                    </p>
+
+
+                    <a
+                        href="mailto:huntdown.inc@gmail.com?subject=Golden%20Dawn%20Games%20Enquiry"
+                        class="contact-button"
+                    >
+                        SEND MESSAGE
+                    </a>
+
+                </div>
+
+
+                <!-- LEGAL -->
+
+                <div class="support-links">
+
+
+                    <!-- TERMS -->
+
+                    <a
+                        href="https://www.termsfeed.com/live/d28f35ab-baaa-440a-937c-6e5ce85a678a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        TERMS OF SERVICE
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- PRIVACY -->
+
+                    <a
+                        href="https://www.termsfeed.com/live/5a4d18a9-16fe-442d-bc32-3ac795053a2f"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        PRIVACY POLICY
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+                <!-- SUPPORT SOCIALS -->
+
+                <div class="socials">
+
+
+                    <a
+                        href="https://www.facebook.com/GoldenDawnGames"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        FACEBOOK
+                    </a>
+
+
+                    <a
+                        href="https://x.com/GoldenDawnGames"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        X
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        INSTAGRAM
+                    </a>
+
+
+                    <a
+                        href="https://www.youtube.com/@GoldenDawnGames14"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        YOUTUBE
+                    </a>
+
+
+                    <a
+                        href="https://discord.gg/BjjWVMHG2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        DISCORD
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/golden-dawn-games-32a3202b9/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LINKEDIN
+                    </a>
+
+
+                </div>
+
 
             </div>
 
