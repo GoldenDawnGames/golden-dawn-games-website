@@ -33,7 +33,7 @@ body {
     width: 100%;
     height: 110px;
 
-    padding: 32px 55px;
+    padding: 28px 55px;
 
     display: flex;
     align-items: flex-start;
@@ -46,58 +46,25 @@ body {
 
 
 /* =========================================================
-   LOGO
+   GOLDEN DAWN LOGO
 ========================================================= */
 
 .nav-logo {
-    position: relative;
-
     display: flex;
-    align-items: flex-start;
-
-    color: #f2efe7;
-
-    font-size: 20px;
-    font-weight: 700;
-
-    letter-spacing: 4px;
-    line-height: 1;
+    align-items: center;
 
     pointer-events: auto;
+
+    text-decoration: none;
 }
 
+.logo-image {
+    width: 145px;
+    height: auto;
 
-/* GOLDEN DAWN text */
+    display: block;
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* GAMES */
-
-.logo-games {
-    margin-top: 8px;
-
-    color: #d0aa5b;
-
-    font-size: 8px;
-    font-weight: 400;
-
-    letter-spacing: 5px;
-}
-
-
-/* Star */
-
-.logo-star {
-    color: #d0aa5b;
-
-    font-size: 15px;
-
-    margin-right: 12px;
-    margin-top: 1px;
+    object-fit: contain;
 }
 
 
@@ -111,7 +78,7 @@ body {
 
     gap: 34px;
 
-    margin-top: 3px;
+    margin-top: 10px;
 
     pointer-events: auto;
 }
@@ -136,7 +103,7 @@ body {
 
 
 /* =========================================================
-   SOCIALS — RIGHT CENTER
+   RIGHT CENTER SOCIALS
 ========================================================= */
 
 .nav-social {
@@ -151,7 +118,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
 
-    gap: 18px;
+    gap: 16px;
 
     z-index: 100;
 
@@ -386,51 +353,11 @@ main {
 
 
 /* =========================================================
-   COMPANY
-========================================================= */
-
-.company-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 50px;
-
-    margin-top: 100px;
-}
-
-.company-grid div {
-    border-top: 1px solid #333;
-
-    padding-top: 20px;
-}
-
-.company-grid span {
-    display: block;
-
-    color: #777;
-
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 15px;
-}
-
-.company-grid strong {
-    font-size: 18px;
-
-    font-weight: 400;
-}
-
-
-/* =========================================================
    PRODUCTS
 ========================================================= */
 
 .game-list {
     display: flex;
-
     flex-direction: column;
 }
 
@@ -445,10 +372,27 @@ main {
 
     border-bottom: 1px solid #222;
 
-    transition: 0.4s;
+    transition:
+        padding 0.4s ease,
+        background 0.4s ease;
 }
 
-.game > span {
+.game-link {
+    color: inherit;
+
+    text-decoration: none;
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.game > span,
+.game-link > span {
     color: #555;
 
     font-size: 12px;
@@ -462,6 +406,8 @@ main {
     font-weight: 400;
 
     letter-spacing: 1px;
+
+    transition: color 0.3s ease;
 }
 
 .game p {
@@ -476,6 +422,10 @@ main {
 
 .game:hover {
     padding-left: 20px;
+}
+
+.game:hover h3 {
+    color: #d0aa5b;
 }
 
 .game.featured h3 {
@@ -543,6 +493,81 @@ main {
    SUPPORT
 ========================================================= */
 
+.support-content {
+    max-width: 850px;
+}
+
+
+/* Contact */
+
+.contact-block {
+    margin-bottom: 70px;
+}
+
+.contact-block h3 {
+    color: #d0aa5b;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.contact-block p {
+    color: #999;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+}
+
+.contact-block a {
+    color: #f2efe7;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.contact-block a:hover {
+    color: #d0aa5b;
+}
+
+
+/* Send message */
+
+.contact-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 14px 24px;
+
+    border: 1px solid rgba(208, 170, 91, 0.5);
+
+    color: #d0aa5b;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #d0aa5b;
+
+    color: #050505;
+}
+
+
+/* Legal */
+
 .support-links {
     max-width: 800px;
 
@@ -583,15 +608,17 @@ main {
 
 
 /* =========================================================
-   SOCIALS SECTION
+   SUPPORT SOCIALS
 ========================================================= */
 
 .socials {
-    margin-top: 100px;
+    margin-top: 90px;
 
     display: flex;
 
-    gap: 40px;
+    flex-wrap: wrap;
+
+    gap: 30px;
 }
 
 .socials a {
@@ -599,9 +626,11 @@ main {
 
     text-decoration: none;
 
-    font-size: 11px;
+    font-size: 10px;
 
     letter-spacing: 2px;
+
+    transition: color 0.3s ease;
 }
 
 .socials a:hover {
@@ -643,27 +672,13 @@ footer {
     .side-nav {
         height: 90px;
 
-        padding: 25px 25px;
+        padding: 22px 25px;
 
         align-items: flex-start;
     }
 
-    .nav-logo {
-        font-size: 16px;
-    }
-
-    .logo-star {
-        font-size: 13px;
-
-        margin-right: 9px;
-    }
-
-    .logo-games {
-        font-size: 7px;
-
-        letter-spacing: 4px;
-
-        margin-top: 7px;
+    .logo-image {
+        width: 120px;
     }
 
     .side-nav nav {
@@ -696,6 +711,10 @@ footer {
         padding: 100px 8%;
     }
 
+    .game-link {
+        grid-template-columns: 55px 1fr;
+    }
+
     .company-grid {
         grid-template-columns: 1fr;
 
@@ -710,6 +729,12 @@ footer {
         gap: 10px;
     }
 
+    .socials {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
     footer {
         padding: 40px 8%;
 
@@ -719,10 +744,50 @@ footer {
 
         align-items: flex-start;
     }
+}
 
-    .socials {
-        flex-direction: column;
 
-        gap: 20px;
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .side-nav {
+        padding: 20px;
+    }
+
+    .logo-image {
+        width: 105px;
+    }
+
+    .nav-social {
+        right: 20px;
+
+        gap: 12px;
+    }
+
+    .nav-social a {
+        font-size: 8px;
+    }
+
+    .hero {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 14vw, 70px);
+
+        letter-spacing: -3px;
+    }
+
+    .section {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .section h2 {
+        font-size: 45px;
     }
 }
