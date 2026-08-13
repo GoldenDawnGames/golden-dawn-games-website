@@ -12,7 +12,7 @@
 
     <meta
         name="description"
-        content="UNO Rush! — A fast-paced UNO-inspired match-3 puzzle game from Golden Dawn Games with 10,000 levels, boosters, daily rewards, spin wheel and more."
+        content="UNO Rush! — A fast-paced match-3 puzzle game from Golden Dawn Games. Match cards, create combos, overcome obstacles and progress through 10,000 levels."
     >
 
     <meta
@@ -34,7 +34,7 @@
 
     <link
         rel="preconnect"
-        href="https://fonts.gstatic.com"
+        href="https://fonts.googleapis.com"
         crossorigin
     >
 
@@ -49,9 +49,9 @@
     ====================================================== -->
 
     <link
-    rel="stylesheet"
-    href="./css/game.css"
->
+        rel="stylesheet"
+        href="./css/game.css"
+    >
 
 </head>
 
@@ -65,39 +65,59 @@
 
 <header class="game-header">
 
+
+    <!-- GOLDEN DAWN GAMES -->
+
     <a
-        href="../index.html#top"
+        href="./index.html#top"
         class="game-logo"
         aria-label="Golden Dawn Games"
     >
 
         <img
-    src="./assets/images/golden-dawn-logo.png"
-    alt="Golden Dawn Games"
->
+            src="./assets/images/golden-dawn-logo.png"
+            alt="Golden Dawn Games"
+        >
+
+        <div class="game-logo-text">
+
+            <span class="game-logo-golden">
+                GOLDEN DAWN
+            </span>
+
+            <span class="game-logo-games">
+                GAMES
+            </span>
+
+        </div>
 
     </a>
 
 
-    <nav class="game-nav">
+    <!-- NAVIGATION -->
 
-        <a href="../index.html#company">
-            COMPANY
+    <nav
+        class="game-nav"
+        aria-label="Main Navigation"
+    >
+
+        <a href="./index.html#top">
+            TOP
         </a>
 
-        <a href="../index.html#products">
+        <a href="./index.html#products">
             PRODUCTS
         </a>
 
-        <a href="../index.html#press">
+        <a href="./index.html#press">
             PRESS RELEASE
         </a>
 
-        <a href="../index.html#recruit">
+        <a href="./index.html#recruit">
             RECRUIT
         </a>
 
-        <a href="../index.html#support">
+        <a href="./index.html#support">
             SUPPORT
         </a>
 
@@ -107,16 +127,18 @@
 
 
 <!-- =========================================================
-     GAME HERO
+     MAIN
 ========================================================= -->
 
 <main>
 
 
+<!-- =========================================================
+     HERO
+========================================================= -->
+
 <section class="game-hero">
 
-
-    <!-- CINEMATIC BACKGROUND -->
 
     <div class="hero-background"></div>
 
@@ -130,9 +152,12 @@
     <div class="hero-inner">
 
 
-        <!-- LEFT -->
+        <!-- =================================================
+             LEFT CONTENT
+        ================================================== -->
 
         <div class="hero-copy">
+
 
             <p class="hero-eyebrow">
                 GOLDEN DAWN GAMES
@@ -152,13 +177,16 @@
 
             <p class="hero-description">
 
-                A fast-paced UNO-inspired match-3 puzzle
-                experience where every move can change the board.
+                A fast-paced match-3 puzzle experience
+                where every move matters.
 
             </p>
 
 
             <div class="hero-actions">
+
+
+                <!-- GOOGLE PLAY -->
 
                 <a
                     href="https://play.google.com/store/apps/details?id=com.goldendawngames.unorush&hl=en_IN"
@@ -184,19 +212,25 @@
                 </a>
 
 
+                <!-- BACK -->
+
                 <a
-                    href="../index.html#products"
+                    href="./index.html#products"
                     class="back-button"
                 >
                     ← ALL GAMES
                 </a>
 
+
             </div>
+
 
         </div>
 
 
-        <!-- RIGHT INFO PANEL -->
+        <!-- =================================================
+             GAME INFORMATION
+        ================================================== -->
 
         <aside class="game-info-panel">
 
@@ -214,6 +248,8 @@
             <div class="info-line"></div>
 
 
+            <!-- GENRE -->
+
             <div class="info-row">
 
                 <span>
@@ -226,6 +262,8 @@
 
             </div>
 
+
+            <!-- PLATFORM -->
 
             <div class="info-row">
 
@@ -240,6 +278,23 @@
             </div>
 
 
+            <!-- DOWNLOADS -->
+
+            <div class="info-row">
+
+                <span>
+                    DOWNLOADS
+                </span>
+
+                <strong>
+                    1.5K+
+                </strong>
+
+            </div>
+
+
+            <!-- LEVELS -->
+
             <div class="info-row">
 
                 <span>
@@ -253,18 +308,7 @@
             </div>
 
 
-            <div class="info-row">
-
-                <span>
-                    STATUS
-                </span>
-
-                <strong>
-                    LIVE
-                </strong>
-
-            </div>
-
+            <!-- GOOGLE PLAY -->
 
             <a
                 href="https://play.google.com/store/apps/details?id=com.goldendawngames.unorush&hl=en_IN"
@@ -272,17 +316,23 @@
                 rel="noopener noreferrer"
                 class="info-play"
             >
+
                 PLAY ON GOOGLE PLAY
-                <span>↗</span>
+
+                <span>
+                    ↗
+                </span>
+
             </a>
 
 
         </aside>
 
+
     </div>
 
 
-    <!-- SCROLL INDICATOR -->
+    <!-- SCROLL -->
 
     <div class="scroll-indicator">
 
@@ -294,11 +344,12 @@
 
     </div>
 
+
 </section>
 
 
 <!-- =========================================================
-     INTRO
+     01 — THE GAME
 ========================================================= -->
 
 <section class="game-section intro-section">
@@ -329,50 +380,67 @@
 
         <div class="intro-large">
 
+
             <p>
 
                 UNO Rush! is a fast-paced match-3 puzzle
-                game inspired by the world of UNO.
+                game where players match three or more
+                cards to clear the board.
 
             </p>
+
 
             <p>
 
-                Match three or more cards, clear the board,
-                create powerful combinations and push your
-                way through a massive journey of
+                Create powerful combinations, overcome
+                obstacles and discover new challenges as
+                you progress through a journey of
                 <strong>10,000 levels.</strong>
 
             </p>
+
+
+            <p>
+
+                Easy to pick up, but increasingly challenging
+                as you progress.
+
+            </p>
+
 
         </div>
 
 
         <div class="intro-small">
 
-            <p>
-
-                Easy to understand.
-                Difficult to master.
-
-            </p>
 
             <p>
 
-                Every level introduces new challenges,
-                mechanics and ways to play.
+                MATCH THREE OR MORE.
 
             </p>
+
+
+            <p>
+
+                Every move can change the board.
+                Plan your combinations and keep the
+                rush going.
+
+            </p>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
 <!-- =========================================================
-     CORE GAMEPLAY
+     02 — CORE GAMEPLAY
 ========================================================= -->
 
 <section class="game-section gameplay-section">
@@ -400,6 +468,8 @@
     <div class="feature-grid">
 
 
+        <!-- MATCH -->
+
         <article class="feature-card">
 
             <div class="feature-number">
@@ -412,14 +482,16 @@
 
             <p>
 
-                Match three or more matching cards to
-                clear them from the board and create
-                new opportunities.
+                Match three or more cards of the same
+                color to clear them from the board and
+                create new opportunities.
 
             </p>
 
         </article>
 
+
+        <!-- SPECIAL CARDS -->
 
         <article class="feature-card">
 
@@ -428,19 +500,21 @@
             </div>
 
             <h3>
-                SPECIAL CARDS
+                SPECIAL COMBINATIONS
             </h3>
 
             <p>
 
-                Build larger combinations and discover
-                powerful card mechanics that can clear
-                large sections of the board.
+                Create larger combinations and unleash
+                powerful effects that can clear large
+                sections of the board.
 
             </p>
 
         </article>
 
+
+        <!-- OBSTACLES -->
 
         <article class="feature-card">
 
@@ -454,14 +528,15 @@
 
             <p>
 
-                As the journey progresses, levels introduce
-                different layouts and obstacles that change
-                how you approach each move.
+                Different level layouts and obstacles
+                change how you approach every move.
 
             </p>
 
         </article>
 
+
+        <!-- LEVELS -->
 
         <article class="feature-card">
 
@@ -475,20 +550,22 @@
 
             <p>
 
-                A huge progression journey designed to
-                keep the game challenging as you advance.
+                Progress through a massive journey of
+                increasingly challenging puzzle boards.
 
             </p>
 
         </article>
 
+
     </div>
+
 
 </section>
 
 
 <!-- =========================================================
-     MECHANICS
+     03 — LEVEL MECHANICS
 ========================================================= -->
 
 <section class="game-section mechanics-section">
@@ -516,6 +593,8 @@
     <div class="mechanics-list">
 
 
+        <!-- BUBBLE -->
+
         <div class="mechanic-item">
 
             <span>
@@ -529,14 +608,19 @@
                 </h3>
 
                 <p>
+
                     Clear cards around bubble obstacles
-                    and open the board for new combinations.
+                    and open the board for new
+                    combinations.
+
                 </p>
 
             </div>
 
         </div>
 
+
+        <!-- BLOCK -->
 
         <div class="mechanic-item">
 
@@ -551,14 +635,19 @@
                 </h3>
 
                 <p>
+
                     Navigate blocked sections and find
-                    the right combinations to break through.
+                    the right combinations to break
+                    through.
+
                 </p>
 
             </div>
 
         </div>
 
+
+        <!-- SPECIAL -->
 
         <div class="mechanic-item">
 
@@ -573,14 +662,18 @@
                 </h3>
 
                 <p>
-                    Create larger matches and unlock
+
+                    Build larger matches to create
                     powerful effects across the board.
+
                 </p>
 
             </div>
 
         </div>
 
+
+        <!-- DIFFICULTY -->
 
         <div class="mechanic-item">
 
@@ -595,21 +688,25 @@
                 </h3>
 
                 <p>
+
                     The further you go, the more demanding
                     the boards become.
+
                 </p>
 
             </div>
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
 <!-- =========================================================
-     FEATURES
+     04 — GAME SYSTEMS
 ========================================================= -->
 
 <section class="game-section systems-section">
@@ -637,6 +734,8 @@
     <div class="systems-grid">
 
 
+        <!-- DAILY REWARDS -->
+
         <article>
 
             <span>
@@ -648,12 +747,16 @@
             </h3>
 
             <p>
-                Come back every day and collect
-                rewards as you continue your journey.
+
+                Return every day and collect rewards
+                as you continue your journey.
+
             </p>
 
         </article>
 
+
+        <!-- SPIN WHEEL -->
 
         <article>
 
@@ -666,12 +769,16 @@
             </h3>
 
             <p>
-                Spin the wheel and discover coins,
+
+                Spin the wheel to discover coins,
                 boosters and other rewards.
+
             </p>
 
         </article>
 
+
+        <!-- BOOSTERS -->
 
         <article>
 
@@ -684,12 +791,16 @@
             </h3>
 
             <p>
+
                 Use powerful boosters when the board
                 demands something more.
+
             </p>
 
         </article>
 
+
+        <!-- SHOP -->
 
         <article>
 
@@ -702,30 +813,38 @@
             </h3>
 
             <p>
-                An in-game shop provides optional
-                purchases and additional game resources.
+
+                Purchase optional resources and
+                items through the in-game shop.
+
             </p>
 
         </article>
 
+
+        <!-- UI -->
 
         <article>
 
             <span>
-                FREE TO PLAY
+                EXPERIENCE
             </span>
 
             <h3>
-                ADS
+                UI & EXPERIENCE
             </h3>
 
             <p>
-                Advertising helps support the free-to-play
-                experience.
+
+                Clean, responsive interfaces designed
+                to keep the gameplay clear and focused.
+
             </p>
 
         </article>
 
+
+        <!-- PROGRESSION -->
 
         <article>
 
@@ -738,19 +857,23 @@
             </h3>
 
             <p>
+
                 Progress through thousands of levels
                 and face increasingly challenging boards.
+
             </p>
 
         </article>
 
+
     </div>
+
 
 </section>
 
 
 <!-- =========================================================
-     EXPERIENCE
+     05 — JOURNEY
 ========================================================= -->
 
 <section class="experience-section">
@@ -761,22 +884,32 @@
 
     <div class="experience-content">
 
+
         <p>
             THE JOURNEY
         </p>
 
+
         <h2>
+
             10,000
-            <span>LEVELS.</span>
+
+            <span>
+                LEVELS.
+            </span>
+
         </h2>
+
 
         <p class="experience-text">
 
             Start with simple matches.
             Master the mechanics.
+            Overcome obstacles.
             Push deeper into the journey.
 
         </p>
+
 
         <a
             href="https://play.google.com/store/apps/details?id=com.goldendawngames.unorush&hl=en_IN"
@@ -784,17 +917,24 @@
             rel="noopener noreferrer"
             class="large-play-button"
         >
+
             PLAY UNO RUSH!
-            <span>↗</span>
+
+            <span>
+                ↗
+            </span>
+
         </a>
 
+
     </div>
+
 
 </section>
 
 
 <!-- =========================================================
-     FINAL INFO
+     FINAL
 ========================================================= -->
 
 <section class="game-section final-section">
@@ -809,8 +949,13 @@
 
 
         <h2>
+
             READY TO
-            <span>RUSH?</span>
+
+            <span>
+                RUSH?
+            </span>
+
         </h2>
 
 
@@ -827,11 +972,18 @@
             rel="noopener noreferrer"
             class="final-button"
         >
+
             PLAY ON GOOGLE PLAY
-            <span>↗</span>
+
+            <span>
+                ↗
+            </span>
+
         </a>
 
+
     </div>
+
 
 </section>
 
@@ -868,6 +1020,7 @@
         DAWNOVEN™
 
     </div>
+
 
 </footer>
 
