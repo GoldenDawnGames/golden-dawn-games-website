@@ -43,11 +43,15 @@
 
     <!-- =====================================================
          GAME PAGE CSS
+
+         IMPORTANT:
+         uno-rush.html is inside /games/
+         game.css is inside /css/
     ====================================================== -->
 
     <link
         rel="stylesheet"
-        href="./game.css"
+        href="../css/game.css"
     >
 
 </head>
@@ -61,7 +65,6 @@
 ========================================================= -->
 
 <header class="game-header">
-
 
     <!-- GOLDEN DAWN BRAND -->
 
@@ -92,9 +95,9 @@
     </a>
 
 
-    <!-- NAVIGATION -->
+    <!-- TOP NAVIGATION -->
 
-    <nav aria-label="Game Navigation">
+    <nav aria-label="Main Navigation">
 
         <a href="../index.html#top">
             TOP
@@ -122,7 +125,13 @@
 
 
 <!-- =========================================================
-     RIGHT SOCIALS
+     SOCIALS
+     
+     Desktop:
+     Right side
+
+     Mobile:
+     Moved to bottom through CSS
 ========================================================= -->
 
 <aside class="nav-social">
@@ -130,7 +139,6 @@
     <div class="social-title">
         SOCIALS
     </div>
-
 
     <a
         href="https://www.facebook.com/GoldenDawnGames"
@@ -140,7 +148,6 @@
         FACEBOOK
     </a>
 
-
     <a
         href="https://x.com/GoldenDawnGames"
         target="_blank"
@@ -148,7 +155,6 @@
     >
         X
     </a>
-
 
     <a
         href="https://www.instagram.com/"
@@ -158,7 +164,6 @@
         INSTAGRAM
     </a>
 
-
     <a
         href="https://www.youtube.com/@GoldenDawnGames14"
         target="_blank"
@@ -167,7 +172,6 @@
         YOUTUBE
     </a>
 
-
     <a
         href="https://discord.gg/BjjWVMHG2"
         target="_blank"
@@ -175,7 +179,6 @@
     >
         DISCORD
     </a>
-
 
     <a
         href="https://www.linkedin.com/in/golden-dawn-games-32a3202b9/"
@@ -200,7 +203,6 @@
     ====================================================== -->
 
     <section class="game-hero">
-
 
         <div class="hero-glow"></div>
 
@@ -244,21 +246,23 @@
 
             <p class="game-description">
 
-                A fast-paced card match-3 puzzle game
-                where every move matters.
+                UNO Rush! is a fast-paced card match-3
+                puzzle game where players merge matching
+                cards, clear the board and overcome
+                increasingly challenging levels.
 
-                Match three cards of the same color,
-                clear the board, overcome obstacles
-                and keep pushing through thousands
-                of challenging levels.
+                <br><br>
+
+                Easy to understand, satisfying to play
+                and designed for players who want a
+                long-running puzzle journey.
 
             </p>
 
 
-            <!-- META -->
+            <!-- GAME META -->
 
             <div class="game-meta">
-
 
                 <div>
 
@@ -298,7 +302,6 @@
 
                 </div>
 
-
             </div>
 
 
@@ -316,11 +319,10 @@
                 </span>
 
                 <strong>
-                    ANDROID ↗
+                    UNO RUSH! — ANDROID ↗
                 </strong>
 
             </a>
-
 
         </div>
 
@@ -329,35 +331,64 @@
              VISUAL
         ================================================== -->
 
-        <div class="game-visual">
-
+        <div
+            class="game-visual"
+            aria-hidden="true"
+        >
 
             <div class="visual-glow"></div>
 
 
             <div class="floating-card card-red">
-                <span>UNO</span>
-                <strong>7</strong>
+
+                <span>
+                    UNO
+                </span>
+
+                <strong>
+                    7
+                </strong>
+
             </div>
 
 
             <div class="floating-card card-yellow">
-                <span>UNO</span>
-                <strong>2</strong>
+
+                <span>
+                    UNO
+                </span>
+
+                <strong>
+                    2
+                </strong>
+
             </div>
 
 
             <div class="floating-card card-blue">
-                <span>UNO</span>
-                <strong>5</strong>
+
+                <span>
+                    UNO
+                </span>
+
+                <strong>
+                    5
+                </strong>
+
             </div>
 
 
             <div class="floating-card card-green">
-                <span>UNO</span>
-                <strong>9</strong>
-            </div>
 
+                <span>
+                    UNO
+                </span>
+
+                <strong>
+                    9
+                </strong>
+
+            </div>
 
         </div>
 
@@ -365,11 +396,10 @@
 
 
     <!-- =====================================================
-         ABOUT
+         ABOUT THE GAME
     ====================================================== -->
 
     <section class="game-section">
-
 
         <div class="section-label">
             01 / THE GAME
@@ -378,17 +408,17 @@
 
         <div class="section-content">
 
-
             <h2>
                 A DIFFERENT KIND
+                <br>
                 OF <span>UNO.</span>
             </h2>
 
 
             <p class="large-copy">
 
-                UNO Rush! takes the recognizable colors
-                and card-based identity of UNO and turns
+                UNO Rush! takes the recognizable card
+                colors and identity of UNO and transforms
                 them into a fast, satisfying match-3
                 puzzle experience.
 
@@ -397,21 +427,19 @@
 
             <p class="body-copy">
 
-                The goal is simple.
+                The core idea is simple.
 
                 <br><br>
 
-                Find matching cards, merge three cards
-                of the same color and clear your way
-                through the board.
+                Find matching cards and merge three
+                cards of the same color to clear them
+                from the board.
 
                 <br><br>
 
-                But as the levels progress, the boards
-                become more challenging. Obstacles,
-                special mechanics and increasingly
-                difficult situations force players to
-                think before every move.
+                As players progress, levels introduce
+                new challenges, obstacles and mechanics
+                that require more thoughtful moves.
 
             </p>
 
@@ -426,14 +454,12 @@
 
     <section class="game-section dark-section">
 
-
         <div class="section-label">
             02 / CORE GAMEPLAY
         </div>
 
 
         <div class="section-content">
-
 
             <h2>
                 THREE CARDS.
@@ -443,7 +469,6 @@
 
 
             <div class="feature-grid">
-
 
                 <article class="feature-card">
 
@@ -456,11 +481,10 @@
                     </h3>
 
                     <p>
-
                         Merge three cards of the same
-                        color to clear them from the board
-                        and progress through the level.
-
+                        color to clear them from the
+                        board and progress through
+                        the level.
                     </p>
 
                 </article>
@@ -477,11 +501,10 @@
                     </h3>
 
                     <p>
-
                         Create powerful combinations
-                        to clear larger areas and make
-                        difficult boards easier to solve.
-
+                        to clear larger areas and
+                        make difficult boards easier
+                        to solve.
                     </p>
 
                 </article>
@@ -498,11 +521,9 @@
                     </h3>
 
                     <p>
-
-                        Every move can change the board.
-                        Plan your matches and avoid
-                        getting trapped by the level.
-
+                        Every move can change the
+                        board. Plan your matches and
+                        avoid getting trapped.
                     </p>
 
                 </article>
@@ -519,11 +540,9 @@
                     </h3>
 
                     <p>
-
-                        Use special gameplay mechanics
-                        and boosters when the board
-                        becomes difficult.
-
+                        Special boosters and gameplay
+                        mechanics help players overcome
+                        difficult situations.
                     </p>
 
                 </article>
@@ -541,14 +560,12 @@
 
     <section class="game-section">
 
-
         <div class="section-label">
             03 / LEVEL MECHANICS
         </div>
 
 
         <div class="section-content">
-
 
             <h2>
                 EVERY LEVEL
@@ -559,16 +576,15 @@
 
             <p class="large-copy">
 
-                The board keeps changing as new
-                mechanics and obstacles are introduced.
+                New mechanics and obstacles keep the
+                puzzle experience evolving throughout
+                the journey.
 
             </p>
 
 
             <div class="mechanics-grid">
 
-
-                <!-- BUBBLE -->
 
                 <article class="mechanic-card">
 
@@ -581,18 +597,14 @@
                     </h3>
 
                     <p>
-
                         Bubble mechanics add another
                         layer of challenge to the board.
                         Break through them and continue
-                        your match journey.
-
+                        your journey.
                     </p>
 
                 </article>
 
-
-                <!-- BLOCK -->
 
                 <article class="mechanic-card">
 
@@ -605,18 +617,14 @@
                     </h3>
 
                     <p>
-
                         Block mechanics restrict parts
-                        of the board and make players
-                        think carefully about their
-                        next match.
-
+                        of the board and require players
+                        to think carefully about their
+                        next move.
                     </p>
 
                 </article>
 
-
-                <!-- OBSTACLES -->
 
                 <article class="mechanic-card">
 
@@ -629,11 +637,9 @@
                     </h3>
 
                     <p>
-
                         Different level situations
-                        challenge players to find the
-                        right sequence of moves.
-
+                        challenge players to discover
+                        the right sequence of moves.
                     </p>
 
                 </article>
@@ -651,9 +657,7 @@
 
     <section class="massive-section">
 
-
         <div class="massive-content">
-
 
             <div class="section-label">
                 04 / PROGRESSION
@@ -667,11 +671,9 @@
 
 
             <p>
-
-                A massive puzzle journey built for
-                players who want to keep matching,
-                improving and pushing further.
-
+                A massive puzzle journey for players
+                who want to keep matching, improving
+                and pushing further.
             </p>
 
 
@@ -700,14 +702,12 @@
 
     <section class="game-section dark-section">
 
-
         <div class="section-label">
             05 / MORE TO DISCOVER
         </div>
 
 
         <div class="section-content">
-
 
             <h2>
                 THE RUSH DOESN'T
@@ -717,9 +717,6 @@
 
 
             <div class="feature-grid">
-
-
-                <!-- DAILY REWARDS -->
 
                 <article class="feature-card">
 
@@ -732,17 +729,13 @@
                     </h3>
 
                     <p>
-
                         Return every day and collect
                         rewards that help keep your
                         journey moving.
-
                     </p>
 
                 </article>
 
-
-                <!-- SPIN WHEEL -->
 
                 <article class="feature-card">
 
@@ -755,17 +748,13 @@
                     </h3>
 
                     <p>
-
                         Spin the wheel and discover
                         rewards that can support
                         your progression.
-
                     </p>
 
                 </article>
 
-
-                <!-- SHOP -->
 
                 <article class="feature-card">
 
@@ -778,18 +767,14 @@
                     </h3>
 
                     <p>
-
-                        The in-game shop provides
+                        An in-game shop provides
                         optional purchases and
                         additional ways to enhance
                         your journey.
-
                     </p>
 
                 </article>
 
-
-                <!-- ADS -->
 
                 <article class="feature-card">
 
@@ -802,17 +787,12 @@
                     </h3>
 
                     <p>
-
-                        Optional advertising experiences
-                        are part of the free-to-play
-                        mobile experience.
-
+                        Advertising is part of the
+                        free-to-play mobile experience.
                     </p>
 
                 </article>
 
-
-                <!-- PROGRESSION -->
 
                 <article class="feature-card">
 
@@ -825,17 +805,13 @@
                     </h3>
 
                     <p>
-
                         Keep advancing through the
                         levels and face new challenges
                         along the way.
-
                     </p>
 
                 </article>
 
-
-                <!-- MOBILE -->
 
                 <article class="feature-card">
 
@@ -848,11 +824,9 @@
                     </h3>
 
                     <p>
-
-                        Designed around quick,
+                        Designed around quick and
                         satisfying puzzle sessions
                         on Android devices.
-
                     </p>
 
                 </article>
@@ -870,9 +844,7 @@
 
     <section class="experience-section">
 
-
         <div class="experience-content">
-
 
             <div class="section-label">
                 06 / THE EXPERIENCE
@@ -891,15 +863,13 @@
             <p>
 
                 UNO Rush! is designed to be instantly
-                understandable while giving players
-                enough variety to keep every stage
-                feeling meaningful.
+                understandable while offering enough
+                variety to keep the journey engaging.
 
             </p>
 
 
             <div class="experience-points">
-
 
                 <div>
 
@@ -939,7 +909,6 @@
 
                 </div>
 
-
             </div>
 
         </div>
@@ -953,19 +922,15 @@
 
     <section class="dawnoven-section">
 
-
         <div class="dawnoven-line"></div>
-
 
         <p>
             A GOLDEN DAWN GAMES EXPERIENCE
         </p>
 
-
         <h2>
             DAWNOVEN<span>™</span>
         </h2>
-
 
     </section>
 
@@ -976,9 +941,7 @@
 
     <section class="store-section">
 
-
         <div class="store-content">
-
 
             <div class="section-label">
                 07 / PLAY NOW
@@ -1026,26 +989,90 @@
 
 
 <!-- =========================================================
+     MOBILE SOCIALS
+
+     This stays after the main content and before footer.
+     CSS places it on mobile.
+========================================================= -->
+
+<div class="mobile-socials">
+
+    <div class="social-title">
+        SOCIALS
+    </div>
+
+    <div class="mobile-social-links">
+
+        <a
+            href="https://www.facebook.com/GoldenDawnGames"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            FACEBOOK
+        </a>
+
+        <a
+            href="https://x.com/GoldenDawnGames"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            X
+        </a>
+
+        <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            INSTAGRAM
+        </a>
+
+        <a
+            href="https://www.youtube.com/@GoldenDawnGames14"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            YOUTUBE
+        </a>
+
+        <a
+            href="https://discord.gg/BjjWVMHG2"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            DISCORD
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/golden-dawn-games-32a3202b9/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LINKEDIN
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
      FOOTER
 ========================================================= -->
 
 <footer class="game-footer">
 
-
     <div>
         GOLDEN DAWN GAMES
     </div>
-
 
     <div>
         UNO RUSH!
     </div>
 
-
     <div>
         © 2026 GOLDEN DAWN GAMES
     </div>
-
 
 </footer>
 
