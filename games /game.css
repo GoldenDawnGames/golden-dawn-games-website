@@ -24,7 +24,6 @@ html {
 
 body {
     background: #050505;
-
     color: #f2efe7;
 
     font-family:
@@ -34,7 +33,6 @@ body {
         sans-serif;
 
     line-height: 1.6;
-
     overflow-x: hidden;
 }
 
@@ -59,51 +57,37 @@ a {
     left: 0;
 
     width: 100%;
-
     height: 110px;
 
-    padding:
-        18px
-        55px;
+    padding: 18px 55px;
 
     display: flex;
-
     align-items: flex-start;
-
     justify-content: space-between;
 
-    z-index: 100;
+    z-index: 1000;
 
     pointer-events: none;
 }
 
 
 /* =========================================================
-   GOLDEN DAWN LOGO
+   LOGO
 ========================================================= */
 
 .nav-logo {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 
-    justify-content: flex-start;
-
     width: 170px;
-
-    min-height: 120px;
 
     text-decoration: none;
 
     pointer-events: auto;
 
-    flex-shrink: 0;
-
     position: relative;
-
-    z-index: 200;
+    z-index: 1001;
 
     line-height: 1;
 }
@@ -113,69 +97,46 @@ a {
     display: block;
 
     width: 75px;
-
     height: auto;
 
     max-height: 58px;
 
     object-fit: contain;
 
-    object-position: center;
-
-    margin:
-        0
-        auto
-        7px
-        auto;
+    margin: 0 auto 7px;
 }
 
 
 .nav-logo-text {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
-    justify-content: flex-start;
 
     width: 100%;
 
     text-align: center;
-
-    line-height: 1;
 }
 
 
 .nav-logo-golden {
-    display: block;
-
     color: #d0aa5b;
 
     font-size: 12px;
-
     font-weight: 700;
 
     letter-spacing: 3px;
-
-    line-height: 1.2;
 
     white-space: nowrap;
 }
 
 
 .nav-logo-games {
-    display: block;
-
     color: #f2efe7;
 
     font-size: 9px;
-
     font-weight: 500;
 
     letter-spacing: 4px;
-
-    line-height: 1.3;
 
     margin-top: 3px;
 
@@ -184,12 +145,11 @@ a {
 
 
 /* =========================================================
-   NAVIGATION
+   TOP NAV
 ========================================================= */
 
 .game-header nav {
     display: flex;
-
     align-items: center;
 
     gap: 34px;
@@ -206,7 +166,6 @@ a {
     text-decoration: none;
 
     font-size: 11px;
-
     font-weight: 600;
 
     letter-spacing: 2px;
@@ -221,33 +180,29 @@ a {
 
 .game-header nav a:hover {
     color: #d0aa5b;
-
     transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   SOCIAL NAVIGATION
+   DESKTOP SOCIALS
 ========================================================= */
 
 .nav-social {
     position: fixed;
 
     right: 55px;
-
     top: 50%;
 
     transform: translateY(-50%);
 
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-end;
 
     gap: 16px;
 
-    z-index: 100;
+    z-index: 900;
 
     pointer-events: auto;
 }
@@ -257,7 +212,6 @@ a {
     color: #555;
 
     font-size: 8px;
-
     font-weight: 500;
 
     letter-spacing: 4px;
@@ -272,7 +226,6 @@ a {
     text-decoration: none;
 
     font-size: 10px;
-
     font-weight: 500;
 
     letter-spacing: 2px;
@@ -291,7 +244,16 @@ a {
 
 
 /* =========================================================
-   GAME HERO
+   MOBILE SOCIALS
+========================================================= */
+
+.mobile-socials {
+    display: none;
+}
+
+
+/* =========================================================
+   HERO
 ========================================================= */
 
 .game-hero {
@@ -300,13 +262,9 @@ a {
     position: relative;
 
     display: flex;
-
     align-items: center;
 
-    padding:
-        150px
-        12%
-        100px;
+    padding: 150px 12% 100px;
 
     overflow: hidden;
 
@@ -335,17 +293,13 @@ a {
     position: absolute;
 
     width: 760px;
-
     height: 760px;
 
-    border:
-        1px solid
-        rgba(208, 170, 91, 0.08);
+    border: 1px solid rgba(208, 170, 91, 0.08);
 
     border-radius: 50%;
 
     right: -250px;
-
     top: 50%;
 
     transform: translateY(-50%);
@@ -364,11 +318,9 @@ a {
     position: absolute;
 
     width: 1px;
-
     height: 180px;
 
     right: 55px;
-
     bottom: 0;
 
     background:
@@ -390,10 +342,9 @@ a {
 .game-hero-content {
     position: relative;
 
-    z-index: 5;
+    z-index: 10;
 
     width: 58%;
-
     max-width: 800px;
 }
 
@@ -410,7 +361,6 @@ a {
     text-decoration: none;
 
     font-size: 10px;
-
     font-weight: 500;
 
     letter-spacing: 3px;
@@ -431,24 +381,19 @@ a {
 
 
 /* =========================================================
-   GAME STATUS
+   STATUS
 ========================================================= */
 
 .game-status {
     display: inline-block;
 
-    padding:
-        7px
-        13px;
+    padding: 7px 13px;
 
-    border:
-        1px solid
-        rgba(208, 170, 91, 0.4);
+    border: 1px solid rgba(208, 170, 91, 0.4);
 
     color: #d0aa5b;
 
     font-size: 9px;
-
     font-weight: 600;
 
     letter-spacing: 3px;
@@ -458,10 +403,12 @@ a {
 
 
 /* =========================================================
-   GAME TITLE
+   HERO TITLE
 ========================================================= */
 
 .game-hero h1 {
+    margin: 0;
+
     font-size:
         clamp(
             75px,
@@ -475,16 +422,12 @@ a {
 
     font-weight: 800;
 
-    margin: 0;
-
     max-width: 850px;
 }
 
 
 .game-hero h1 span {
     color: #d0aa5b;
-
-    display: block;
 }
 
 
@@ -496,7 +439,6 @@ a {
     color: #d0aa5b;
 
     font-size: 13px;
-
     font-weight: 600;
 
     letter-spacing: 7px;
@@ -537,16 +479,13 @@ a {
 
 .game-meta div {
     display: flex;
-
     flex-direction: column;
 
-    border-top:
-        1px solid
-        #292929;
+    min-width: 120px;
+
+    border-top: 1px solid #292929;
 
     padding-top: 15px;
-
-    min-width: 120px;
 }
 
 
@@ -554,7 +493,6 @@ a {
     color: #555;
 
     font-size: 9px;
-
     font-weight: 500;
 
     letter-spacing: 3px;
@@ -567,7 +505,6 @@ a {
     color: #f2efe7;
 
     font-size: 11px;
-
     font-weight: 600;
 
     letter-spacing: 1px;
@@ -575,25 +512,22 @@ a {
 
 
 /* =========================================================
-   STORE BUTTON
+   ANDROID BUTTON
 ========================================================= */
 
-.store-button {
+.android-button {
     display: inline-flex;
 
     flex-direction: column;
-
     align-items: flex-start;
 
     margin-top: 50px;
 
-    padding:
-        15px
-        25px;
+    padding: 16px 26px;
 
-    border:
-        1px solid
-        rgba(208, 170, 91, 0.5);
+    border: 1px solid rgba(208, 170, 91, 0.55);
+
+    color: #d0aa5b;
 
     text-decoration: none;
 
@@ -604,7 +538,7 @@ a {
 }
 
 
-.store-button:hover {
+.android-button:hover {
     background: #d0aa5b;
 
     color: #050505;
@@ -613,9 +547,8 @@ a {
 }
 
 
-.store-button-small {
+.android-button span {
     font-size: 8px;
-
     font-weight: 600;
 
     letter-spacing: 3px;
@@ -624,59 +557,58 @@ a {
 }
 
 
-.store-button-main {
+.android-button strong {
     font-size: 12px;
-
     font-weight: 700;
 
     letter-spacing: 2px;
 
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 
 /* =========================================================
-   HERO GAME ART
+   HERO VISUAL
 ========================================================= */
 
-.game-hero-art {
+.game-visual {
     position: absolute;
 
-    right: 10%;
-
+    right: 7%;
     top: 50%;
 
     width: 470px;
-
     height: 560px;
 
     transform:
         translateY(-45%)
         rotate(-4deg);
 
-    z-index: 3;
+    z-index: 5;
 
     pointer-events: none;
 }
 
 
-.card-glow {
+/* =========================================================
+   VISUAL GLOW
+========================================================= */
+
+.visual-glow {
     position: absolute;
 
     width: 430px;
-
     height: 430px;
 
+    left: 20px;
+    top: 70px;
+
     border-radius: 50%;
-
-    top: 80px;
-
-    left: 30px;
 
     background:
         radial-gradient(
             circle,
-            rgba(208, 170, 91, 0.14),
+            rgba(208, 170, 91, 0.16),
             transparent 65%
         );
 
@@ -685,37 +617,30 @@ a {
 
 
 /* =========================================================
-   UNO CARDS
+   FLOATING CARDS
 ========================================================= */
 
-.uno-card {
+.floating-card {
     position: absolute;
 
-    width: 190px;
-
-    height: 280px;
+    width: 175px;
+    height: 255px;
 
     border-radius: 22px;
 
-    border:
-        5px solid
-        rgba(255, 255, 255, 0.85);
+    border: 5px solid rgba(255, 255, 255, 0.85);
 
     box-shadow:
-        0 25px 70px
-        rgba(0, 0, 0, 0.55);
+        0 25px 70px rgba(0, 0, 0, 0.55);
 
     display: flex;
 
     flex-direction: column;
 
     align-items: center;
-
     justify-content: space-between;
 
-    padding:
-        25px
-        20px;
+    padding: 22px 18px;
 
     color: white;
 
@@ -723,47 +648,41 @@ a {
 }
 
 
-.uno-card::before {
+.floating-card::before {
     content: "";
 
     position: absolute;
 
-    width: 140px;
-
-    height: 210px;
+    width: 130px;
+    height: 200px;
 
     border-radius: 50%;
 
-    background:
-        rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.92);
 
     transform: rotate(-25deg);
-
-    opacity: 0.95;
 }
 
 
-.uno-card span {
+.floating-card span,
+.floating-card strong {
     position: relative;
 
     z-index: 2;
+}
 
-    font-size: 17px;
+
+.floating-card span {
+    font-size: 16px;
 
     font-weight: 800;
 
     font-style: italic;
-
-    letter-spacing: -1px;
 }
 
 
-.uno-card strong {
-    position: relative;
-
-    z-index: 2;
-
-    font-size: 100px;
+.floating-card strong {
+    font-size: 90px;
 
     font-weight: 800;
 
@@ -775,96 +694,93 @@ a {
    CARD COLORS
 ========================================================= */
 
-.uno-red {
-    background:
-        linear-gradient(
-            145deg,
-            #e31e35,
-            #a90719
-        );
-
-    transform:
-        rotate(-13deg);
+.card-red {
+    background: linear-gradient(
+        145deg,
+        #e31e35,
+        #a90719
+    );
 
     top: 130px;
+    left: 35px;
 
-    left: 45px;
+    transform: rotate(-13deg);
 
     z-index: 2;
 }
 
 
-.uno-yellow {
-    background:
-        linear-gradient(
-            145deg,
-            #f3c72d,
-            #d59b05
-        );
+.card-yellow {
+    background: linear-gradient(
+        145deg,
+        #f3c72d,
+        #d59b05
+    );
 
-    transform:
-        rotate(9deg);
+    top: 65px;
+    left: 165px;
 
-    top: 70px;
-
-    left: 170px;
+    transform: rotate(9deg);
 
     z-index: 4;
 }
 
 
-.uno-blue {
-    background:
-        linear-gradient(
-            145deg,
-            #1479d1,
-            #07519b
-        );
+.card-blue {
+    background: linear-gradient(
+        145deg,
+        #1479d1,
+        #07519b
+    );
 
-    transform:
-        rotate(20deg);
+    top: 180px;
+    left: 245px;
 
-    top: 190px;
-
-    left: 240px;
+    transform: rotate(20deg);
 
     z-index: 3;
 }
 
 
-.uno-green {
-    background:
-        linear-gradient(
-            145deg,
-            #2aa84a,
-            #087329
-        );
-
-    transform:
-        rotate(-2deg);
+.card-green {
+    background: linear-gradient(
+        145deg,
+        #2aa84a,
+        #087329
+    );
 
     top: 285px;
+    left: 115px;
 
-    left: 120px;
+    transform: rotate(-2deg);
 
     z-index: 1;
 }
 
 
 /* =========================================================
-   GAME SECTIONS
+   STANDARD GAME SECTION
 ========================================================= */
 
 .game-section {
     position: relative;
 
-    padding:
-        160px
-        12%;
+    padding: 160px 12%;
 
     border-top:
         1px solid
         rgba(255, 255, 255, 0.07);
+}
+
+
+.dark-section {
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(208, 170, 91, 0.045),
+            transparent 35%
+        ),
+        #070707;
 }
 
 
@@ -876,7 +792,6 @@ a {
     color: #d0aa5b;
 
     font-size: 10px;
-
     font-weight: 600;
 
     letter-spacing: 4px;
@@ -954,20 +869,6 @@ a {
 
 
 /* =========================================================
-   GAMEPLAY
-========================================================= */
-
-.gameplay-section {
-    background:
-        radial-gradient(
-            circle at 80% 50%,
-            rgba(208, 170, 91, 0.05),
-            transparent 35%
-        );
-}
-
-
-/* =========================================================
    FEATURE GRID
 ========================================================= */
 
@@ -984,10 +885,6 @@ a {
     margin-top: 100px;
 }
 
-
-/* =========================================================
-   FEATURE CARD
-========================================================= */
 
 .feature-card {
     min-height: 270px;
@@ -1045,50 +942,298 @@ a {
 
 
 /* =========================================================
-   PROGRESSION
+   MECHANICS
 ========================================================= */
 
-.progression-section {
-    background:
-        linear-gradient(
-            180deg,
-            #050505,
-            #080704
-        );
-}
-
-
-.progression-content {
+.mechanics-grid {
     display: grid;
 
     grid-template-columns:
-        1.2fr
-        0.8fr;
+        repeat(3, 1fr);
 
-    gap: 100px;
+    gap: 20px;
 
-    align-items: end;
+    margin-top: 90px;
 }
 
 
-.progression-text {
-    max-width: 430px;
+.mechanic-card {
+    min-height: 300px;
+
+    padding: 35px;
+
+    border: 1px solid #222;
+
+    background: #080808;
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 
-.progression-text p {
+.mechanic-card:hover {
+    border-color: rgba(208, 170, 91, 0.45);
+
+    transform: translateY(-5px);
+}
+
+
+.mechanic-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(208, 170, 91, 0.35);
+
+    color: #d0aa5b;
+
+    font-size: 22px;
+
+    margin-bottom: 60px;
+}
+
+
+.mechanic-card h3 {
+    font-size: 18px;
+
+    letter-spacing: 2px;
+}
+
+
+.mechanic-card p {
     color: #777;
 
-    font-size: 15px;
+    font-size: 13px;
 
-    line-height: 1.9;
+    line-height: 1.8;
 
-    margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 
 /* =========================================================
-   DAWNOVEN SECTION
+   10,000 LEVELS
+========================================================= */
+
+.massive-section {
+    min-height: 85vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 12%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(208, 170, 91, 0.10),
+            transparent 45%
+        ),
+        #060606;
+}
+
+
+.massive-content {
+    width: 100%;
+}
+
+
+.massive-section h2 {
+    font-size:
+        clamp(
+            100px,
+            17vw,
+            270px
+        );
+
+    line-height: 0.8;
+
+    letter-spacing: -10px;
+
+    font-weight: 800;
+
+    margin-top: 10px;
+}
+
+
+.massive-section h2 span {
+    color: #d0aa5b;
+}
+
+
+.massive-section p {
+    max-width: 650px;
+
+    color: #777;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-top: 55px;
+}
+
+
+.level-line {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 70px;
+
+    max-width: 850px;
+}
+
+
+.level-line span {
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+}
+
+
+.level-line div {
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d0aa5b,
+            rgba(208, 170, 91, 0.05)
+        );
+}
+
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience-section {
+    min-height: 85vh;
+
+    padding: 160px 12%;
+
+    display: flex;
+
+    align-items: center;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    background:
+        linear-gradient(
+            135deg,
+            #050505,
+            #090805
+        );
+}
+
+
+.experience-content {
+    max-width: 1050px;
+}
+
+
+.experience-section h2 {
+    font-size:
+        clamp(
+            60px,
+            8vw,
+            115px
+        );
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    font-weight: 800;
+}
+
+
+.experience-section h2 span {
+    color: #d0aa5b;
+}
+
+
+.experience-section > .experience-content > p {
+    max-width: 650px;
+
+    color: #777;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-top: 45px;
+}
+
+
+.experience-points {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 35px;
+
+    margin-top: 80px;
+}
+
+
+.experience-points div {
+    border-top: 1px solid #292929;
+
+    padding-top: 20px;
+}
+
+
+.experience-points span {
+    display: block;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.experience-points strong {
+    color: #f2efe7;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   DAWNOVEN
 ========================================================= */
 
 .dawnoven-section {
@@ -1099,7 +1244,6 @@ a {
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -1121,7 +1265,6 @@ a {
 
 .dawnoven-line {
     width: 80px;
-
     height: 1px;
 
     background: #d0aa5b;
@@ -1134,7 +1277,6 @@ a {
     color: #555;
 
     font-size: 9px;
-
     font-weight: 500;
 
     letter-spacing: 5px;
@@ -1169,7 +1311,7 @@ a {
 
 
 /* =========================================================
-   STORE SECTION
+   STORE
 ========================================================= */
 
 .store-section {
@@ -1178,14 +1320,11 @@ a {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
 
-    padding:
-        140px
-        10%;
+    padding: 140px 10%;
 
     border-top:
         1px solid
@@ -1195,11 +1334,6 @@ a {
 
 .store-content {
     max-width: 900px;
-}
-
-
-.store-section .section-label {
-    margin-bottom: 30px;
 }
 
 
@@ -1229,6 +1363,8 @@ a {
 
     font-size: 16px;
 
+    line-height: 1.8;
+
     margin-top: 30px;
 }
 
@@ -1243,20 +1379,15 @@ a {
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     min-width: 260px;
 
     margin-top: 45px;
 
-    padding:
-        22px
-        35px;
+    padding: 22px 35px;
 
-    border:
-        1px solid
-        rgba(208, 170, 91, 0.6);
+    border: 1px solid rgba(208, 170, 91, 0.6);
 
     color: #d0aa5b;
 
@@ -1305,16 +1436,13 @@ a {
 .game-footer {
     min-height: 150px;
 
-    padding:
-        45px
-        12%;
+    padding: 45px 12%;
 
     border-top: 1px solid #222;
 
     display: flex;
 
     justify-content: space-between;
-
     align-items: center;
 
     color: #555;
@@ -1351,7 +1479,7 @@ a {
     }
 
 
-    .game-hero-art {
+    .game-visual {
         right: -30px;
 
         transform:
@@ -1361,21 +1489,19 @@ a {
     }
 
 
-    .game-section {
+    .game-section,
+    .massive-section,
+    .experience-section {
         padding:
             120px
             8%;
     }
 
 
-    .feature-grid {
+    .feature-grid,
+    .mechanics-grid {
         grid-template-columns:
             repeat(2, 1fr);
-    }
-
-
-    .progression-content {
-        gap: 60px;
     }
 
 
@@ -1397,25 +1523,23 @@ a {
     /* HEADER */
 
     .game-header {
-        height: 90px;
+        height: 85px;
 
         padding:
-            16px
+            14px
             20px;
     }
 
 
     .nav-logo {
         width: 120px;
-
-        min-height: 85px;
     }
 
 
     .nav-logo-image {
-        width: 60px;
+        width: 58px;
 
-        max-height: 48px;
+        max-height: 45px;
 
         margin-bottom: 5px;
     }
@@ -1440,36 +1564,22 @@ a {
     }
 
 
-    /* SOCIALS */
+    /* DESKTOP SOCIALS HIDDEN */
 
     .nav-social {
-        right: 20px;
-
-        gap: 11px;
-    }
-
-
-    .social-title {
-        font-size: 7px;
-    }
-
-
-    .nav-social a {
-        font-size: 8px;
-
-        letter-spacing: 1.5px;
+        display: none;
     }
 
 
     /* HERO */
 
     .game-hero {
-        min-height: 100vh;
+        min-height: auto;
 
         display: block;
 
         padding:
-            150px
+            135px
             7%
             90px;
     }
@@ -1477,7 +1587,6 @@ a {
 
     .game-hero-content {
         width: 100%;
-
         max-width: 650px;
     }
 
@@ -1518,17 +1627,15 @@ a {
     }
 
 
-    /* HERO ART */
+    /* HERO VISUAL */
 
-    .game-hero-art {
+    .game-visual {
         position: relative;
 
         right: auto;
-
         top: auto;
 
         width: 380px;
-
         height: 420px;
 
         margin:
@@ -1546,14 +1653,17 @@ a {
 
     /* SECTIONS */
 
-    .game-section {
+    .game-section,
+    .massive-section,
+    .experience-section {
         padding:
             100px
             7%;
     }
 
 
-    .game-section h2 {
+    .game-section h2,
+    .experience-section h2 {
         font-size:
             clamp(
                 48px,
@@ -1572,7 +1682,8 @@ a {
 
     /* FEATURES */
 
-    .feature-grid {
+    .feature-grid,
+    .mechanics-grid {
         grid-template-columns: 1fr;
 
         margin-top: 70px;
@@ -1589,12 +1700,33 @@ a {
     }
 
 
-    /* PROGRESSION */
+    /* 10,000 */
 
-    .progression-content {
+    .massive-section h2 {
+        font-size:
+            clamp(
+                80px,
+                20vw,
+                150px
+            );
+
+        letter-spacing: -6px;
+    }
+
+
+    .level-line {
+        gap: 12px;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-points {
         grid-template-columns: 1fr;
 
-        gap: 50px;
+        gap: 25px;
+
+        margin-top: 60px;
     }
 
 
@@ -1626,6 +1758,63 @@ a {
     }
 
 
+    /* MOBILE SOCIALS */
+
+    .mobile-socials {
+        display: block;
+
+        padding:
+            70px
+            7%;
+
+        border-top:
+            1px solid
+            rgba(255, 255, 255, 0.07);
+
+        background: #050505;
+    }
+
+
+    .mobile-socials .social-title {
+        display: block;
+
+        margin-bottom: 30px;
+
+        color: #555;
+
+        font-size: 8px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .mobile-social-links {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 18px 28px;
+    }
+
+
+    .mobile-social-links a {
+        color: #777;
+
+        text-decoration: none;
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+        transition: color 0.3s ease;
+    }
+
+
+    .mobile-social-links a:hover {
+        color: #d0aa5b;
+    }
+
+
     /* FOOTER */
 
     .game-footer {
@@ -1650,7 +1839,7 @@ a {
 @media (max-width: 500px) {
 
     .game-hero {
-        padding-top: 135px;
+        padding-top: 125px;
     }
 
 
@@ -1700,9 +1889,8 @@ a {
     }
 
 
-    .game-hero-art {
+    .game-visual {
         width: 340px;
-
         height: 390px;
 
         transform:
@@ -1715,19 +1903,20 @@ a {
     }
 
 
-    .uno-card {
+    .floating-card {
         width: 170px;
-
         height: 250px;
     }
 
 
-    .uno-card strong {
+    .floating-card strong {
         font-size: 85px;
     }
 
 
-    .game-section {
+    .game-section,
+    .massive-section,
+    .experience-section {
         padding:
             85px
             7%;
@@ -1741,7 +1930,8 @@ a {
     }
 
 
-    .game-section h2 {
+    .game-section h2,
+    .experience-section h2 {
         font-size:
             clamp(
                 45px,
@@ -1761,18 +1951,45 @@ a {
     }
 
 
-    .feature-card {
+    .feature-card,
+    .mechanic-card {
         padding: 28px;
     }
 
 
-    .feature-card h3 {
+    .feature-card h3,
+    .mechanic-card h3 {
         font-size: 16px;
     }
 
 
-    .feature-card p {
+    .feature-card p,
+    .mechanic-card p {
         font-size: 12px;
+    }
+
+
+    .massive-section h2 {
+        font-size:
+            clamp(
+                65px,
+                20vw,
+                100px
+            );
+
+        letter-spacing: -5px;
+    }
+
+
+    .massive-section p {
+        font-size: 13px;
+    }
+
+
+    .level-line span {
+        font-size: 7px;
+
+        letter-spacing: 2px;
     }
 
 
@@ -1785,6 +2002,13 @@ a {
 
     .large-store-button {
         min-width: 220px;
+    }
+
+
+    .mobile-social-links {
+        flex-direction: column;
+
+        gap: 16px;
     }
 
 }
