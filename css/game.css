@@ -216,3 +216,147 @@
         translateY(-2px);
 
 }
+
+/* =========================================================
+   TABLET HEADER
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .game-header {
+
+        height: 100px;
+
+        padding: 18px 25px;
+
+    }
+
+
+    .game-logo {
+
+        top: 18px;
+
+        right: 25px;
+
+        width: 120px;
+
+    }
+
+
+    .game-logo img {
+
+        width: 65px;
+
+        max-height: 50px;
+
+        margin-bottom: 5px;
+
+    }
+
+
+    .game-logo-golden {
+
+        font-size: 10px;
+
+        letter-spacing: 2.5px;
+
+    }
+
+
+    .game-logo-games {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+        margin-top: 3px;
+
+    }
+
+
+    .game-nav {
+
+        top: 25px;
+
+        left: 25px;
+
+        gap: 18px;
+
+    }
+
+
+    .game-nav a {
+
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .game-header {
+
+        height: 85px;
+
+        padding: 15px 20px;
+
+    }
+
+
+    .game-logo {
+
+        top: 15px;
+
+        right: 20px;
+
+        width: 105px;
+
+    }
+
+
+    .game-logo img {
+
+        width: 55px;
+
+        max-height: 42px;
+
+        margin-bottom: 4px;
+
+    }
+
+
+    .game-logo-golden {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .game-logo-games {
+
+        font-size: 7px;
+
+        letter-spacing: 2.5px;
+
+        margin-top: 2px;
+
+    }
+
+
+    .game-nav {
+
+        display: none;
+
+    }
+
+}
