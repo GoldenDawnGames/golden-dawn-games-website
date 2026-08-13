@@ -24,7 +24,6 @@ html {
 
 body {
     background: #050505;
-
     color: #f2efe7;
 
     font-family:
@@ -77,7 +76,7 @@ a {
 
 
 /* =========================================================
-   LOGO
+   GOLDEN DAWN LOGO
 ========================================================= */
 
 .nav-logo {
@@ -94,6 +93,8 @@ a {
     text-decoration: none;
 
     pointer-events: auto;
+
+    flex-shrink: 0;
 }
 
 
@@ -101,6 +102,8 @@ a {
     display: block;
 
     width: 90px;
+
+    height: auto;
 
     max-height: 70px;
 
@@ -117,11 +120,15 @@ a {
 
     align-items: center;
 
+    justify-content: center;
+
     text-align: center;
 
     line-height: 1;
 }
 
+
+/* GOLDEN DAWN */
 
 .nav-logo-golden {
     color: #d0aa5b;
@@ -136,6 +143,8 @@ a {
 }
 
 
+/* GAMES */
+
 .nav-logo-games {
     color: #f2efe7;
 
@@ -145,14 +154,14 @@ a {
 
     letter-spacing: 4px;
 
-    margin-top: 4px;
+    margin-top: 5px;
 
     white-space: nowrap;
 }
 
 
 /* =========================================================
-   HEADER NAV
+   HEADER NAVIGATION
 ========================================================= */
 
 .game-header nav {
@@ -179,6 +188,8 @@ a {
 
     letter-spacing: 2px;
 
+    white-space: nowrap;
+
     transition:
         color 0.3s ease,
         transform 0.3s ease;
@@ -193,7 +204,7 @@ a {
 
 
 /* =========================================================
-   SOCIAL NAV
+   DESKTOP SOCIALS
 ========================================================= */
 
 .nav-social {
@@ -222,6 +233,8 @@ a {
 
     font-size: 8px;
 
+    font-weight: 500;
+
     letter-spacing: 4px;
 
     margin-bottom: 8px;
@@ -235,6 +248,8 @@ a {
 
     font-size: 10px;
 
+    font-weight: 500;
+
     letter-spacing: 2px;
 
     transition:
@@ -247,6 +262,15 @@ a {
     color: #d0aa5b;
 
     transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   MOBILE SOCIALS
+========================================================= */
+
+.mobile-socials {
+    display: none;
 }
 
 
@@ -290,7 +314,6 @@ a {
     position: absolute;
 
     width: 750px;
-
     height: 750px;
 
     right: -280px;
@@ -304,6 +327,8 @@ a {
         rgba(208, 170, 91, 0.09);
 
     border-radius: 50%;
+
+    pointer-events: none;
 }
 
 
@@ -384,6 +409,8 @@ a {
 ========================================================= */
 
 .game-hero h1 {
+    margin: 0 0 30px;
+
     font-size:
         clamp(
             70px,
@@ -396,8 +423,6 @@ a {
     letter-spacing: -6px;
 
     font-weight: 800;
-
-    margin-bottom: 30px;
 }
 
 
@@ -506,7 +531,7 @@ a {
         17px
         30px;
 
-    min-width: 220px;
+    min-width: 250px;
 
     border:
         1px solid
@@ -544,16 +569,16 @@ a {
 
 
 .android-button strong {
-    font-size: 16px;
+    font-size: 14px;
 
     font-weight: 600;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 
 /* =========================================================
-   GAME VISUAL
+   HERO VISUAL
 ========================================================= */
 
 .game-visual {
@@ -570,6 +595,8 @@ a {
     transform: translateY(-50%);
 
     z-index: 2;
+
+    pointer-events: none;
 }
 
 
@@ -577,11 +604,9 @@ a {
     position: absolute;
 
     width: 300px;
-
     height: 300px;
 
     left: 50%;
-
     top: 50%;
 
     transform:
@@ -611,7 +636,6 @@ a {
     position: absolute;
 
     width: 155px;
-
     height: 220px;
 
     border-radius: 18px;
@@ -626,19 +650,19 @@ a {
 
     padding: 20px;
 
-    color: white;
+    color: #fff;
 
     border:
         5px solid
-        rgba(255,255,255,0.9);
+        rgba(255, 255, 255, 0.9);
 
     box-shadow:
         0 25px 70px
-        rgba(0,0,0,0.6);
-
-    transform-origin: center;
+        rgba(0, 0, 0, 0.6);
 
     font-weight: 800;
+
+    user-select: none;
 }
 
 
@@ -660,7 +684,6 @@ a {
     background: #bd2026;
 
     left: 40px;
-
     top: 130px;
 
     transform: rotate(-18deg);
@@ -673,7 +696,6 @@ a {
     background: #d9aa19;
 
     right: 20px;
-
     top: 65px;
 
     transform: rotate(13deg);
@@ -686,7 +708,6 @@ a {
     background: #174fa3;
 
     left: 125px;
-
     top: 240px;
 
     transform: rotate(8deg);
@@ -699,7 +720,6 @@ a {
     background: #16864b;
 
     right: 75px;
-
     top: 270px;
 
     transform: rotate(-11deg);
@@ -723,7 +743,7 @@ a {
 
     border-top:
         1px solid
-        rgba(255,255,255,0.07);
+        rgba(255, 255, 255, 0.07);
 }
 
 
@@ -902,7 +922,9 @@ a {
 
 
 .mechanic-card {
-    padding: 45px 35px;
+    padding:
+        45px
+        35px;
 
     border:
         1px solid
@@ -923,7 +945,7 @@ a {
 
 .mechanic-card:hover {
     border-color:
-        rgba(208,170,91,0.4);
+        rgba(208, 170, 91, 0.4);
 
     transform: translateY(-5px);
 }
@@ -931,20 +953,18 @@ a {
 
 .mechanic-icon {
     width: 55px;
-
     height: 55px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     margin-bottom: 30px;
 
     border:
         1px solid
-        rgba(208,170,91,0.4);
+        rgba(208, 170, 91, 0.4);
 
     color: #d0aa5b;
 
@@ -973,7 +993,7 @@ a {
 
 
 /* =========================================================
-   10,000 LEVEL SECTION
+   10,000 LEVELS
 ========================================================= */
 
 .massive-section {
@@ -994,7 +1014,7 @@ a {
     background:
         radial-gradient(
             circle at 70% 50%,
-            rgba(208,170,91,0.12),
+            rgba(208, 170, 91, 0.12),
             transparent 35%
         );
 }
@@ -1079,7 +1099,7 @@ a {
         linear-gradient(
             90deg,
             #d0aa5b,
-            rgba(208,170,91,0.05)
+            rgba(208, 170, 91, 0.05)
         );
 }
 
@@ -1097,7 +1117,7 @@ a {
 
     border-top:
         1px solid
-        rgba(255,255,255,0.07);
+        rgba(255, 255, 255, 0.07);
 }
 
 
@@ -1179,11 +1199,13 @@ a {
 
     text-align: center;
 
-    padding: 100px 10%;
+    padding:
+        100px
+        10%;
 
     border-top:
         1px solid
-        rgba(255,255,255,0.07);
+        rgba(255, 255, 255, 0.07);
 }
 
 
@@ -1233,7 +1255,7 @@ a {
 
 
 /* =========================================================
-   STORE CTA
+   STORE SECTION
 ========================================================= */
 
 .store-section {
@@ -1250,7 +1272,7 @@ a {
     background:
         radial-gradient(
             circle at 70% 50%,
-            rgba(208,170,91,0.12),
+            rgba(208, 170, 91, 0.12),
             transparent 35%
         );
 }
@@ -1318,7 +1340,7 @@ a {
 
     border:
         1px solid
-        rgba(208,170,91,0.5);
+        rgba(208, 170, 91, 0.5);
 
     color: #d0aa5b;
 
@@ -1445,6 +1467,8 @@ a {
 
 @media (max-width: 600px) {
 
+    /* HEADER */
+
     .game-header {
         min-height: 100px;
 
@@ -1456,6 +1480,8 @@ a {
 
     .nav-logo {
         width: 110px;
+
+        min-height: auto;
     }
 
 
@@ -1477,8 +1503,12 @@ a {
         font-size: 7px;
 
         letter-spacing: 3px;
+
+        margin-top: 4px;
     }
 
+
+    /* HERO */
 
     .game-hero {
         min-height: 100vh;
@@ -1525,10 +1555,21 @@ a {
     }
 
 
+    .android-button {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    /* HIDE DESKTOP VISUAL */
+
     .game-visual {
         display: none;
     }
 
+
+    /* GAME SECTIONS */
 
     .game-section {
         padding:
@@ -1557,6 +1598,8 @@ a {
     }
 
 
+    /* FEATURE GRID */
+
     .feature-grid {
         grid-template-columns: 1fr;
 
@@ -1570,6 +1613,17 @@ a {
         padding: 30px;
     }
 
+
+    /* MECHANICS */
+
+    .mechanics-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* 10,000 LEVELS */
 
     .massive-section {
         min-height: 60vh;
@@ -1604,6 +1658,8 @@ a {
     }
 
 
+    /* EXPERIENCE */
+
     .experience-section {
         padding:
             100px
@@ -1620,10 +1676,21 @@ a {
     }
 
 
+    /* DAWNOVEN */
+
     .dawnoven-section {
         min-height: 40vh;
     }
 
+
+    .dawnoven-section h2 {
+        font-size: 45px;
+
+        letter-spacing: 5px;
+    }
+
+
+    /* STORE */
 
     .store-section {
         min-height: 70vh;
@@ -1649,6 +1716,65 @@ a {
         gap: 20px;
     }
 
+
+    /* =====================================================
+       MOBILE SOCIALS
+
+       They appear AFTER the full game page content,
+       immediately before the footer.
+    ====================================================== */
+
+    .mobile-socials {
+        display: block;
+
+        padding:
+            60px
+            7%;
+
+        border-top:
+            1px solid
+            rgba(255, 255, 255, 0.07);
+
+        background: #050505;
+    }
+
+
+    .mobile-socials .social-title {
+        margin-bottom: 25px;
+    }
+
+
+    .mobile-social-links {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 20px 30px;
+    }
+
+
+    .mobile-social-links a {
+        color: #777;
+
+        text-decoration: none;
+
+        font-size: 9px;
+
+        font-weight: 500;
+
+        letter-spacing: 2px;
+
+        transition:
+            color 0.3s ease;
+    }
+
+
+    .mobile-social-links a:hover {
+        color: #d0aa5b;
+    }
+
+
+    /* FOOTER */
 
     .game-footer {
         padding:
