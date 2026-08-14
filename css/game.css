@@ -1740,13 +1740,23 @@ a:focus-visible {
 }
 
 
-.game-footer img {
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
 
-    width: 110px;
+.footer-brand {
 
-    height: auto;
+    color: var(--gold);
 
-    opacity: 0.8;
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
 
 }
 
