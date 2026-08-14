@@ -157,7 +157,7 @@ a:focus-visible {
 
     flex-direction: column;
 
-    align-items: flex-start;
+    align-items: center;
 
     justify-content: flex-start;
 
@@ -186,9 +186,10 @@ a:focus-visible {
 
     object-fit: contain;
 
-    object-position: left center;
+    object-position: center;
 
-    margin: 0 0 8px 0;
+    margin:
+        0 auto 8px auto;
 
 }
 
@@ -203,13 +204,13 @@ a:focus-visible {
 
     flex-direction: column;
 
-    align-items: flex-start;
+    align-items: center;
 
     justify-content: flex-start;
 
     width: 100%;
 
-    text-align: left;
+    text-align: center;
 
     line-height: 1;
 
@@ -261,7 +262,7 @@ a:focus-visible {
 
     margin-top: 4px;
 
-    margin-left: 38px;
+    margin-left: 0;
 
     text-transform: uppercase;
 
@@ -1751,66 +1752,54 @@ a:focus-visible {
 
 
 /* =========================================================
-   TABLET HEADER
+   TABLET LOGO — LEFT / CENTERED
 ========================================================= */
 
-@media (max-width: 1000px) {
+.game-logo {
 
-    .game-header {
+    top: 20px;
 
-        height: 105px;
+    left: 25px;
 
-        padding: 20px 25px;
+    right: auto;
 
-    }
+    width: 130px;
 
+    align-items: center;
 
-    /* LOGO — LEFT */
-
-    .game-logo {
-
-        top: 20px;
-
-        left: 25px;
-
-        right: auto;
-
-        width: 130px;
-
-        align-items: flex-start;
-
-    }
+}
 
 
-    .game-logo img {
+.game-logo img {
 
-        width: 70px;
+    width: 70px;
 
-        max-height: 55px;
+    max-height: 55px;
 
-        margin-bottom: 6px;
+    margin:
+        0 auto 6px auto;
 
-    }
-
-
-    .game-logo-golden {
-
-        font-size: 10px;
-
-        letter-spacing: 2.5px;
-
-    }
+}
 
 
-    .game-logo-games {
+.game-logo-golden {
 
-        font-size: 8px;
+    font-size: 10px;
 
-        letter-spacing: 3px;
+    letter-spacing: 2.5px;
 
-        margin-left: 29px;
+}
 
-    }
+
+.game-logo-games {
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    margin-left: 0;
+
+}
 
 
     /* NAV — RIGHT */
@@ -1858,50 +1847,51 @@ a:focus-visible {
 
     .game-logo {
 
-        top: 15px;
+    top: 15px;
 
-        left: 20px;
+    left: 20px;
 
-        right: auto;
+    right: auto;
 
-        width: 105px;
+    width: 105px;
 
-        align-items: flex-start;
+    align-items: center;
 
-    }
-
-
-    .game-logo img {
-
-        width: 55px;
-
-        max-height: 42px;
-
-        margin-bottom: 4px;
-
-    }
+}
 
 
-    .game-logo-golden {
+.game-logo img {
 
-        font-size: 9px;
+    width: 55px;
 
-        letter-spacing: 2px;
+    max-height: 42px;
 
-    }
+    margin:
+        0 auto 4px auto;
+
+}
 
 
-    .game-logo-games {
+.game-logo-golden {
 
-        font-size: 7px;
+    font-size: 9px;
 
-        letter-spacing: 2.5px;
+    letter-spacing: 2px;
 
-        margin-top: 2px;
+}
 
-        margin-left: 23px;
 
-    }
+.game-logo-games {
+
+    font-size: 7px;
+
+    letter-spacing: 2.5px;
+
+    margin-top: 2px;
+
+    margin-left: 0;
+
+}
 
 
     /* NAVIGATION */
