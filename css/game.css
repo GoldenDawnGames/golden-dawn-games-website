@@ -1751,29 +1751,33 @@ a:focus-visible {
 
 
 /* =========================================================
-   TABLET
+   TABLET HEADER
 ========================================================= */
 
 @media (max-width: 1000px) {
 
-
-    /* HEADER */
-
     .game-header {
 
-        padding:
-            20px 25px;
+        height: 105px;
+
+        padding: 20px 25px;
 
     }
 
+
+    /* LOGO — LEFT */
 
     .game-logo {
 
         top: 20px;
 
-        right: 25px;
+        left: 25px;
+
+        right: auto;
 
         width: 130px;
+
+        align-items: flex-start;
 
     }
 
@@ -1783,6 +1787,8 @@ a:focus-visible {
         width: 70px;
 
         max-height: 55px;
+
+        margin-bottom: 6px;
 
     }
 
@@ -1802,14 +1808,20 @@ a:focus-visible {
 
         letter-spacing: 3px;
 
+        margin-left: 29px;
+
     }
 
+
+    /* NAV — RIGHT */
 
     .game-nav {
 
         top: 27px;
 
-        left: 25px;
+        right: 25px;
+
+        left: auto;
 
         gap: 18px;
 
@@ -1824,76 +1836,37 @@ a:focus-visible {
 
     }
 
-
-    /* HERO */
-
-    .hero-inner {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 60px;
-
-    }
-
-
-    .game-info-panel {
-
-        max-width: 450px;
-
-    }
-
-
-    /* INTRO */
-
-    .intro-grid {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 40px;
-
-    }
-
-
-    /* SYSTEMS */
-
-    .systems-grid {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
-    }
-
 }
 
 
 /* =========================================================
-   MOBILE
+   MOBILE HEADER
 ========================================================= */
 
 @media (max-width: 700px) {
-
-
-    /* HEADER */
 
     .game-header {
 
         height: 80px;
 
-        padding:
-            15px 20px;
+        padding: 15px 20px;
 
     }
 
+
+    /* LOGO — LEFT */
 
     .game-logo {
 
         top: 15px;
 
-        right: 20px;
+        left: 20px;
+
+        right: auto;
 
         width: 105px;
+
+        align-items: flex-start;
 
     }
 
@@ -1926,8 +1899,12 @@ a:focus-visible {
 
         margin-top: 2px;
 
+        margin-left: 23px;
+
     }
 
+
+    /* NAVIGATION */
 
     .game-nav {
 
