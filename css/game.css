@@ -1762,65 +1762,121 @@ a:focus-visible {
 
 
 /* =========================================================
-   TABLET LOGO — LEFT / CENTERED
+   TABLET RESPONSIVE
+   701px — 1000px
 ========================================================= */
 
-.game-logo {
+@media (max-width: 1000px) {
 
-    top: 20px;
+    /* =====================================================
+       HEADER
+    ===================================================== */
 
-    left: 25px;
+    .game-header {
 
-    right: auto;
+        height: 105px;
 
-    width: 130px;
+        padding:
+            20px 25px;
 
-    align-items: center;
-
-}
-
-
-.game-logo img {
-
-    width: 70px;
-
-    max-height: 55px;
-
-    margin:
-        0 auto 6px auto;
-
-}
+    }
 
 
-.game-logo-golden {
+    /* =====================================================
+       LOGO — FIXED TOP LEFT
+    ===================================================== */
 
-    font-size: 10px;
+    .game-logo {
 
-    letter-spacing: 2.5px;
+        position: fixed;
 
-}
+        top: 20px;
+
+        left: 25px;
+
+        right: auto;
+
+        width: 130px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+    }
 
 
-.game-logo-games {
+    .game-logo img {
 
-    font-size: 8px;
+        width: 70px;
 
-    letter-spacing: 3px;
+        max-height: 55px;
 
-    margin-left: 0;
+        margin:
+            0 auto 6px auto;
 
-}
+    }
 
 
-    /* NAV — RIGHT */
+    .game-logo-text {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+
+    .game-logo-golden {
+
+        font-size: 10px;
+
+        letter-spacing: 2.5px;
+
+    }
+
+
+    .game-logo-games {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+        margin-top: 3px;
+
+        margin-left: 0;
+
+    }
+
+
+    /* =====================================================
+       NAVIGATION — FIXED TOP RIGHT
+    ===================================================== */
 
     .game-nav {
+
+        position: fixed;
 
         top: 27px;
 
         right: 25px;
 
         left: auto;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-end;
 
         gap: 18px;
 
@@ -1835,98 +1891,48 @@ a:focus-visible {
 
     }
 
-}
 
-
-/* =========================================================
-   MOBILE HEADER
-========================================================= */
-
-@media (max-width: 700px) {
-
-    .game-header {
-
-        height: 80px;
-
-        padding: 15px 20px;
-
-    }
-
-
-    /* LOGO — LEFT */
-
-    .game-logo {
-
-    top: 15px;
-
-    left: 20px;
-
-    right: auto;
-
-    width: 105px;
-
-    align-items: center;
-
-}
-
-
-.game-logo img {
-
-    width: 55px;
-
-    max-height: 42px;
-
-    margin:
-        0 auto 4px auto;
-
-}
-
-
-.game-logo-golden {
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-}
-
-
-.game-logo-games {
-
-    font-size: 7px;
-
-    letter-spacing: 2.5px;
-
-    margin-top: 2px;
-
-    margin-left: 0;
-
-}
-
-
-    /* NAVIGATION */
-
-    .game-nav {
-
-        display: none;
-
-    }
-
-
-    /* HERO */
+    /* =====================================================
+       HERO
+    ===================================================== */
 
     .game-hero {
 
         min-height: auto;
+
+        align-items: stretch;
 
     }
 
 
     .hero-inner {
 
+        width: 100%;
+
+        max-width: 100%;
+
         padding:
-            130px 7%
-            90px;
+            150px 7%
+            100px;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+
+        align-items: start;
+
+    }
+
+
+    /* =====================================================
+       HERO COPY
+    ===================================================== */
+
+    .hero-copy {
+
+        max-width: 750px;
 
     }
 
@@ -1935,20 +1941,333 @@ a:focus-visible {
 
         font-size:
             clamp(
-                60px,
-                18vw,
-                95px
+                70px,
+                11vw,
+                120px
             );
 
-        letter-spacing:
-            -4px;
+        letter-spacing: -5px;
+
+    }
+
+
+    .hero-description {
+
+        max-width: 650px;
+
+    }
+
+
+    /* =====================================================
+       INFO PANEL
+    ===================================================== */
+
+    .game-info-panel {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        padding: 35px;
+
+        justify-self: start;
+
+    }
+
+
+    /* =====================================================
+       HERO GLOW
+    ===================================================== */
+
+    .hero-glow {
+
+        width: 500px;
+
+        height: 500px;
+
+        right: -220px;
+
+    }
+
+
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .intro-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        max-width: 800px;
+
+    }
+
+
+    .intro-small {
+
+        border-left: none;
+
+        border-top:
+            1px solid
+            var(--line);
+
+        padding-left: 0;
+
+        padding-top: 30px;
+
+    }
+
+
+    /* =====================================================
+       FEATURE GRID
+    ===================================================== */
+
+    .feature-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    /* =====================================================
+       SYSTEMS
+    ===================================================== */
+
+    .systems-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    /* =====================================================
+       EXPERIENCE
+    ===================================================== */
+
+    .experience-section {
+
+        min-height: 70vh;
+
+        padding:
+            110px 8%;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .game-footer {
+
+        padding:
+            45px 7%;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   0px — 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .game-header {
+
+        height: 90px;
+
+        padding:
+            15px 20px;
+
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(0,0,0,0.95),
+                rgba(0,0,0,0)
+            );
+
+    }
+
+
+    /* =====================================================
+       LOGO — FIXED TOP LEFT
+    ===================================================== */
+
+    .game-logo {
+
+        position: fixed;
+
+        top: 15px;
+
+        left: 20px;
+
+        right: auto;
+
+        width: 105px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+    }
+
+
+    .game-logo img {
+
+        width: 55px;
+
+        max-height: 42px;
+
+        margin:
+            0 auto 4px auto;
+
+    }
+
+
+    .game-logo-text {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+
+    .game-logo-golden {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+        line-height: 1.2;
+
+    }
+
+
+    .game-logo-games {
+
+        font-size: 7px;
+
+        letter-spacing: 2.5px;
+
+        margin-top: 2px;
+
+        margin-left: 0;
+
+    }
+
+
+    /* =====================================================
+       NAVIGATION
+    ===================================================== */
+
+    .game-nav {
+
+        display: none;
+
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .game-hero {
+
+        min-height: auto;
+
+        display: block;
+
+    }
+
+
+    .hero-inner {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding:
+            125px 7%
+            80px;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        align-items: start;
+
+    }
+
+
+    /* =====================================================
+       HERO COPY
+    ===================================================== */
+
+    .hero-copy {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    .hero-eyebrow {
+
+        font-size: 8px;
+
+        letter-spacing: 3.5px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .hero-copy h1 {
+
+        font-size:
+            clamp(
+                58px,
+                18vw,
+                92px
+            );
+
+        line-height: 0.88;
+
+        letter-spacing: -4px;
 
     }
 
 
     .hero-tagline {
 
-        font-size: 10px;
+        margin-top: 28px;
+
+        font-size: 9px;
 
         letter-spacing: 4px;
 
@@ -1957,18 +2276,36 @@ a:focus-visible {
 
     .hero-description {
 
-        font-size: 14px;
+        width: 100%;
+
+        max-width: 100%;
+
+        margin-top: 18px;
+
+        font-size: 13px;
+
+        line-height: 1.75;
 
     }
 
 
+    /* =====================================================
+       HERO ACTIONS
+    ===================================================== */
+
     .hero-actions {
 
-        align-items:
-            flex-start;
+        width: 100%;
 
-        flex-direction:
-            column;
+        margin-top: 30px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 18px;
 
     }
 
@@ -1977,17 +2314,141 @@ a:focus-visible {
 
         width: 100%;
 
+        min-width: 0;
+
+        padding:
+            14px 18px;
+
     }
 
+
+    .back-button {
+
+        font-size: 9px;
+
+    }
+
+
+    /* =====================================================
+       GAME INFO PANEL
+    ===================================================== */
 
     .game-info-panel {
 
         width: 100%;
 
+        max-width: 100%;
+
         padding: 25px;
+
+        justify-self: stretch;
 
     }
 
+
+    .info-status {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .game-info-panel h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .info-line {
+
+        margin:
+            20px 0;
+
+    }
+
+
+    .info-row {
+
+        padding:
+            13px 0;
+
+        gap: 15px;
+
+    }
+
+
+    .info-row span {
+
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+
+    .info-row strong {
+
+        font-size: 9px;
+
+        letter-spacing: 0.5px;
+
+    }
+
+
+    .info-play {
+
+        margin-top: 22px;
+
+        font-size: 8px;
+
+    }
+
+
+    /* =====================================================
+       HERO BACKGROUND
+    ===================================================== */
+
+    .hero-background::after {
+
+        background-position:
+            center center;
+
+        opacity: 0.22;
+
+    }
+
+
+    .hero-overlay {
+
+        background:
+
+            linear-gradient(
+                180deg,
+                rgba(0,0,0,0.97) 0%,
+                rgba(0,0,0,0.88) 45%,
+                rgba(0,0,0,0.96) 100%
+            );
+
+    }
+
+
+    .hero-glow {
+
+        width: 350px;
+
+        height: 350px;
+
+        right: -180px;
+
+        top: 40%;
+
+    }
+
+
+    /* =====================================================
+       SCROLL INDICATOR
+    ===================================================== */
 
     .scroll-indicator {
 
@@ -1996,46 +2457,118 @@ a:focus-visible {
     }
 
 
-    /* SECTIONS */
+    /* =====================================================
+       GENERAL SECTIONS
+    ===================================================== */
 
     .game-section {
 
         padding:
-            100px 7%;
+            90px 7%;
+
+    }
+
+
+    /* =====================================================
+       SECTION HEADING
+    ===================================================== */
+
+    .section-number {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .section-heading > p {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 12px;
 
     }
 
 
     .section-heading h2 {
 
+        max-width: 100%;
+
         font-size:
             clamp(
-                40px,
+                38px,
                 12vw,
-                65px
+                62px
             );
 
-        letter-spacing:
-            -2px;
+        line-height: 0.95;
+
+        letter-spacing: -2px;
 
     }
 
 
-    /* INTRO */
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .intro-grid {
+
+        margin-top: 50px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        max-width: 100%;
+
+    }
+
 
     .intro-large p {
 
         font-size: 18px;
 
+        line-height: 1.65;
+
+        margin-bottom: 25px;
+
     }
 
 
-    /* FEATURES */
+    .intro-small {
+
+        border-left: none;
+
+        border-top:
+            1px solid
+            var(--line);
+
+        padding:
+            25px 0 0;
+
+    }
+
+
+    .intro-small p {
+
+        font-size: 13px;
+
+        margin-bottom: 18px;
+
+    }
+
+
+    /* =====================================================
+       FEATURE GRID
+    ===================================================== */
 
     .feature-grid {
 
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
+
+        margin-top: 55px;
 
     }
 
@@ -2056,44 +2589,131 @@ a:focus-visible {
     }
 
 
-    /* MECHANICS */
+    .feature-card h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .feature-card p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* =====================================================
+       MECHANICS
+    ===================================================== */
+
+    .mechanics-list {
+
+        margin-top: 50px;
+
+    }
+
 
     .mechanic-item {
 
         grid-template-columns:
-            45px
-            1fr;
+            40px
+            minmax(0, 1fr);
 
         gap: 15px;
+
+        padding:
+            28px 0;
+
+    }
+
+
+    .mechanic-item > span {
+
+        font-size: 9px;
 
     }
 
 
     .mechanic-item h3 {
 
+        font-size: 17px;
+
+        line-height: 1.3;
+
+    }
+
+
+    .mechanic-item p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* =====================================================
+       SYSTEMS
+    ===================================================== */
+
+    .systems-grid {
+
+        margin-top: 55px;
+
+        grid-template-columns: 1fr;
+
+        gap: 1px;
+
+    }
+
+
+    .systems-grid article {
+
+        min-height: auto;
+
+        padding: 30px;
+
+    }
+
+
+    .systems-grid h3 {
+
+        margin-top: 25px;
+
         font-size: 18px;
 
     }
 
 
-    /* SYSTEMS */
+    .systems-grid p {
 
-    .systems-grid {
-
-        grid-template-columns:
-            1fr;
+        font-size: 13px;
 
     }
 
 
-    /* EXPERIENCE */
+    /* =====================================================
+       EXPERIENCE
+    ===================================================== */
 
     .experience-section {
 
-        min-height: 650px;
+        min-height: 600px;
 
         padding:
-            100px 7%;
+            90px 7%;
+
+    }
+
+
+    .experience-section::before {
+
+        width: 400px;
+
+        height: 400px;
 
     }
 
@@ -2102,77 +2722,25 @@ a:focus-visible {
 
         font-size:
             clamp(
-                75px,
+                65px,
                 20vw,
-                130px
+                115px
             );
 
-        letter-spacing:
-            -5px;
+        line-height: 0.85;
+
+        letter-spacing: -5px;
 
     }
 
 
-    /* FINAL */
+    .experience-text {
 
-    .final-content h2 {
+        max-width: 100%;
 
-        font-size:
-            clamp(
-                50px,
-                14vw,
-                80px
-            );
+        margin-top: 30px;
 
-    }
-
-
-    /* FOOTER */
-
-    .game-footer {
-
-        padding:
-            40px 7%;
-
-        flex-direction:
-            column;
-
-        align-items:
-            flex-start;
-
-        gap: 25px;
-
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 420px) {
-
-
-    .hero-inner {
-
-        padding-top:
-            120px;
-
-    }
-
-
-    .hero-copy h1 {
-
-        font-size:
-            60px;
-
-    }
-
-
-    .info-row strong {
-
-        font-size: 9px;
+        font-size: 14px;
 
     }
 
@@ -2181,8 +2749,284 @@ a:focus-visible {
 
         width: 100%;
 
-        justify-content:
-            space-between;
+        justify-content: space-between;
+
+        margin-top: 35px;
+
+    }
+
+
+    /* =====================================================
+       FINAL SECTION
+    ===================================================== */
+
+    .final-section {
+
+        min-height: 600px;
+
+    }
+
+
+    .final-content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    .final-content h2 {
+
+        font-size:
+            clamp(
+                48px,
+                14vw,
+                78px
+            );
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .final-content > p:not(.final-label) {
+
+        font-size: 13px;
+
+    }
+
+
+    .final-button {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        margin-top: 30px;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .game-footer {
+
+        min-height: 180px;
+
+        padding:
+            40px 7%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 20px;
+
+    }
+
+
+    .footer-brand {
+
+        font-size: 10px;
+
+        letter-spacing: 2.5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   0px — 420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+    /* =====================================================
+       LOGO
+    ===================================================== */
+
+    .game-logo {
+
+        top: 12px;
+
+        left: 15px;
+
+        width: 95px;
+
+    }
+
+
+    .game-logo img {
+
+        width: 48px;
+
+        max-height: 38px;
+
+        margin-bottom: 3px;
+
+    }
+
+
+    .game-logo-golden {
+
+        font-size: 8px;
+
+        letter-spacing: 1.7px;
+
+    }
+
+
+    .game-logo-games {
+
+        font-size: 6px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero-inner {
+
+        padding:
+            115px 7%
+            70px;
+
+        gap: 45px;
+
+    }
+
+
+    .hero-copy h1 {
+
+        font-size: 58px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .hero-tagline {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 12px;
+
+    }
+
+
+    /* =====================================================
+       INFO PANEL
+    ===================================================== */
+
+    .game-info-panel {
+
+        padding: 22px;
+
+    }
+
+
+    .game-info-panel h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .info-row {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .info-row strong {
+
+        font-size: 8px;
+
+    }
+
+
+    /* =====================================================
+       SECTIONS
+    ===================================================== */
+
+    .game-section {
+
+        padding:
+            75px 7%;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size:
+            clamp(
+                36px,
+                12vw,
+                55px
+            );
+
+    }
+
+
+    /* =====================================================
+       EXPERIENCE
+    ===================================================== */
+
+    .experience-section {
+
+        min-height: 560px;
+
+        padding:
+            80px 7%;
+
+    }
+
+
+    .experience-content h2 {
+
+        font-size:
+            clamp(
+                60px,
+                19vw,
+                100px
+            );
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-brand {
+
+        font-size: 9px;
+
+        letter-spacing: 2px;
 
     }
 
